@@ -1,0 +1,15 @@
+﻿@model ProblemsStore.Domain.Entities.BulletList
+
+<div>
+    using(@Html.BeginForm())
+    {
+    @Html.LabelFor(m => m.Heading)
+    @Html.EditorFor(m => m.Heading)
+    
+    @Html.Partial("ListString")
+    }
+
+    <input type="submit" title="Submit" />
+    
+</div>
+

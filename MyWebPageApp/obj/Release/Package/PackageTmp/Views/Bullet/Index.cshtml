@@ -1,0 +1,8 @@
+﻿@model ProblemsStore.Domain.Entities.BulletList
+
+
+@Html.Action("Index", "Header", new { Id = Model.HeaderId })
+
+<ul>
+    <li> @Model.point </li>
+</ul>

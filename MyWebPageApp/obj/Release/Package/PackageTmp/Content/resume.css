@@ -1,0 +1,106 @@
+﻿
+#Resume ul li {
+margin-bottom: 7px;
+list-style-type:none;
+}
+
+.link_arrow {
+    color: #2197D4;
+    font-weight: 700;
+    font-size: 14px;
+    /*position: absolute;*/
+    margin-top: -4px;
+    margin-left: -28px;
+}
+
+#Resume {
+    font-family:Verdana;
+    font-size:13px;
+    width:1000px;
+}
+
+#Resume h1,h4{
+    text-align:center;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+#Resume h2 {
+    color: goldenrod;
+    /*font-size: 25px;*/
+    margin: 10px 0 10px 0;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.edu {
+    color: brown;
+    margin-bottom:7px;
+}
+.gpa_grad, .comapny_loc {
+    color:#8fbe4e;
+    margin-left:5px;
+
+}
+.gpa {
+    float: left;
+    margin-right:600px;
+}
+
+.company_loc {
+     /*margin:15px 0px 5px 0px;*/
+    clear: both;
+    padding: 8px 0px 11px 0px;
+}
+
+.company {
+    float:left; 
+    color:#8bc53f;
+    /*margin:15px 0px 5px 0px;*/
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.loc {
+    float: right;
+}
+
+.list {
+    clear: both;
+    padding-top:3px;
+}
+
+.position {
+    float:left; margin-right:400px;
+}
+
+.startdate {
+    float:left;margin-right:10px;
+}
+
+.skills {
+    margin-right:5px;
+    float:left;
+}
+
+.timespan {
+    float:left;
+}
+
+#content {
+    margin-left:100px;
+}
+
+.position_info {
+    clear:both;
+}
+
+.developmentTech {
+    margin-bottom:15px;
+}
+
+.timespan {
+    float:right;
+}

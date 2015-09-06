@@ -1,0 +1,18 @@
+﻿.tagged {
+    float:left;
+}
+
+/*.postdate div {
+    float:right;
+}*/
+
+p{
+    /*clear:both;*/
+    margin-bottom:5px;
+}
+
+pre {
+    padding:5px;
+}
+
+

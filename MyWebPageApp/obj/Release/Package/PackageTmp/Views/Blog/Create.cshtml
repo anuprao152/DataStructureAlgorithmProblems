@@ -1,0 +1,31 @@
+﻿@model ProblemsStore.Domain.ViewModel.BlogCreateViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Blog</h2>
+
+@section SideBar{
+<div id="SideBar">
+    <ul>
+        <li>@Html.ActionLink("Create Blog", "Create", "Blog")</li>
+        <li>@Html.ActionLink("Create Paragraph","Create","Paragraph")</li>
+        <li>@Html.ActionLink("Create Bullets", "Create", "Bullet")</li>
+        <li>@Html.ActionLink("Create Image", "Create", "Image")</li>
+    </ul>
+ </div>
+}
+
+ @Html.DropDownListFor(x=>x.blog, new SelectList( Model.blogs,"Id","blogName"),"--Select Blog--")
+
+@using(@Html.BeginForm("Create","Blog"))
+{
+   
+    
+    <div>@Html.LabelFor(model => model.blog.blogName)</div>
+    <div>@Html.EditorFor( model => model.blog.blogName)</div>
+
+    <input type="submit" title="Submit" />
+}
+
