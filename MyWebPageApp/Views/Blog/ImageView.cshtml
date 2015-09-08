@@ -1,0 +1,21 @@
+﻿@model ProblemsStore.Domain.Entities.Image
+
+<div>
+    @if (Model.Id == 0)
+    {
+        using(@Html.BeginForm())
+        {
+            <div>@Html.EditorFor(m=>m.ImageUrl)</div>
+            <div>@Html.EditorFor(m => m.Caption)</div>
+            <div>@Html.EditorFor(m=> m.Description)</div>
+        }
+          <input type="submit" title="Submit" />
+    }
+    else
+    {
+            <div><img src="@(Model.ImageUrl).png"/></div>
+            @Html.DisplayFor(m=>m.Caption)
+            @Html.DisplayFor(m=>m.Description)
+    }
+
+</div>

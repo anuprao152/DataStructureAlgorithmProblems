@@ -1,0 +1,136 @@
+﻿@model ProblemsStore.Domain.Entities.Resume
+
+@{
+    //Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Anup Rao Resume</title>
+    <link href="@Url.Content("~/Content/resume.css")"  rel="stylesheet" />
+</head>
+<body>
+    <div id="Resume">
+        <h1>@Model.Person.Name</h1>
+        <div>
+            <h4>@Model.Person.Email</h4>
+            <h4>@Model.Person.Phone</h4>
+            <h4>@Model.Person.Address</h4>
+        </div>
+        <h2>OBJECTIVE</h2>
+        <p>@Model.Objective</p>
+       
+        <div>
+            <h2>EDUCATION</h2>
+            @foreach (var univ in @Model.Universities)
+            {
+                <p class="edu">@Html.DisplayFor( model => univ.Degree ), 
+                   @Html.DisplayFor( model => univ.UnivName ), 
+                   @Html.DisplayFor( model => univ.Address )
+                    
+                   <span class="gpa_grad">
+                      @* <div class="gpa">@Html.DisplayFor( model => univ.GPA )</div>*@
+                       <span class="grad">@Html.DisplayFor( model => univ.GradDate )</span>
+                   </span>
+                </p>
+                
+            }
+        </div>
+
+
+       @* <div>
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <ul>
+                @foreach (var points in Model.ProfessionalSummary)
+                {
+                    <li><span class="link_arrow"> &gt </span>@Html.DisplayFor( model => points )</li>
+                }
+            </ul>
+        </div>*@
+        <div>
+            <h2>EXPERIENCE</h2>
+            <div>
+                @foreach (var job in Model.jobs)
+                {
+                    <div class="company_loc">
+                        <p class="company">@Html.DisplayFor( model => job.Company )</p>
+                        <p class="loc">@Html.DisplayFor( model =>job.Location )</p>
+                    </div>
+                    <div class="position_info">
+                        <p class="position">@Html.DisplayFor( model =>job.Position )</p>
+                        <div class="timespan">
+                            <p class="startdate">@Html.DisplayFor( model =>job.StartDate) - @Html.DisplayFor( model =>job.EndDate)</p>
+                            <p class="timespan">
+                                @{
+                                    TimeSpan date = job.EndDate.Subtract(job.StartDate);
+                                    int Totalmonths = Convert.ToInt32( date.Days / (365.25 / 12));
+                                    int years = Convert.ToInt32(Totalmonths / 12);
+                                    int months = Convert.ToInt32( Totalmonths - 12 * years );
+                                }
+                                @Html.DisplayFor( model => years) Years,  @Html.DisplayFor( model => months) Months
+
+                            </p>
+                        </div>
+                    </div>
+                  
+                    <div class="list">
+                        <ul>
+                            @foreach (var resp in job.Responsibilities)
+                            {
+                                <li> <span class="link_arrow"> &gt </span> @Html.DisplayFor( model => resp )</li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="developmentTech">
+                            @foreach (var tech in job.Technologies)
+                            {
+                                <p class="skills">@Html.DisplayFor( model => tech.Name), </p>
+                            }
+                    </div>
+                }
+            </div>
+        </div>
+        
+        <div>
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+            @foreach (var cert in Model.Certifications)
+            {
+                <li> <span class="link_arrow"> &gt </span> <span>@Html.DisplayFor( model => cert.Name )  @Html.DisplayFor( model => cert.Passyear )</span></li>
+            }
+            </ul>
+        </div>
+        <h2>ACADEMIC PROJECTS</h2>
+        <div>
+             @foreach (var proj in Model.Projects)
+             {
+                  <p>@Html.DisplayFor(model => proj.ProjMetaInfo)</p>
+                  <p>@Html.DisplayFor(model => proj.ProjName)</p>
+                  <p>@Html.DisplayFor(model => proj.ProjDesc)</p> <br />
+             }
+        </div>
+        <h2>COMPUTER SKILLS</h2>
+        <div>
+             @foreach (var skill in Model.Skills)
+             {
+                 <div class="skills"> @Html.DisplayFor(model => skill.Name),</div>
+                  @*<div>
+                        @foreach (var tech in skill.Techs)
+                        {
+                            @Html.DisplayFor( model => tech )
+                        }
+                  </div>*@
+             }
+        </div>
+        @*<h2>COURSES</h2>
+        <div>
+             @foreach (var course in Model.Courses)
+             {
+                  @Html.DisplayFor(model => course)
+             }
+        </div>*@
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@model ProblemsStore.Domain.Entities.Paragraph
+
+@{
+    ViewBag.Title = "Create Paragraph";
+}
+
+<h2>Create Paragraph</h2>
+<div class="CreateParagraph">
+
+ @using(@Html.BeginForm("Create","Paragraph")){
+
+
+        <div>@Html.LabelFor(model => model.Heading)</div>
+        <div>@Html.EditorFor( model => model.Heading.Heading)</div>
+        <div>@Html.LabelFor(model => model.Content)</div>
+        <div>@Html.EditorFor( model => model.Content)</div>
+      
+
+        <input type="submit" title="Submit" />
+ }
+</div>

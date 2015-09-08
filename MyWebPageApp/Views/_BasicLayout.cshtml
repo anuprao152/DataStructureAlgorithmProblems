@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+</head>
+<body>
+    <div id="page-container">
+        <div id="header">
+            <img src="~/Content/Images/ProPic1.png" />
+            <div id="logo">
+                <h1>ANUP RAO</h1> 
+                <div id="tagline">SOFTWARE ENGINEER</div>
+            </div>
+
+            <div id="contact">
+                <ul>
+                    <li>
+                        <i>anuprao85@gmail.com</i>
+                    </li>
+                    <li>
+                        <i> | </i>
+                        <i>585-319-6852</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-nav">
+            <div>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("DataStructure Solutions","Index","Problem")</li>
+                    <li>@Html.ActionLink("Blog", "Index", "Blog")</li>
+                    <li>@Html.ActionLink("Technology", "Index", "Technology")</li>
+                    <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+                    <li>@Html.ActionLink("Resume", "Index", "Resume")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">
+            @if (IsSectionDefined("banner"))
+            {
+                @RenderSection("banner")
+            }
+        </div>
+        <div id="body">
+            @if (IsSectionDefined("subNav"))
+            {
+                @RenderSection("subNav")
+            }
+            @if(IsSectionDefined("SideBar")){
+                @RenderSection("SideBar")
+            }else {
+                 @*<div id="sidebar-a">Sidebar A</div>*@
+            }
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer" hidden>footer</div>
+    </div>
+</body>
+</html>

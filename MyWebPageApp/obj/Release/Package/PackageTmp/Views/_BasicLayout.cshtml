@@ -1,0 +1,51 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+    
+</head>
+<body>
+    <div id="page-container">
+        <div id="header">
+            <h1>Anup Rao</h1>
+        </div>
+        <div id="main-nav">
+            <div>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Problem","Index","Problem")</li>
+                    <li>@Html.ActionLink("About", "Index", "Resume")</li>
+                    <li>@Html.ActionLink("Blog", "Index", "Blog")</li>
+                    <li>@Html.ActionLink("Technology", "Index", "Technology")</li>
+                    <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">
+            @if (IsSectionDefined("banner"))
+            {
+                @RenderSection("banner")
+            }
+        </div>
+        <div id="body">
+            @if (IsSectionDefined("subNav"))
+            {
+                @RenderSection("subNav")
+            }
+            @if(IsSectionDefined("SideBar")){
+                @RenderSection("SideBar")
+            }else {
+                 @*<div id="sidebar-a">Sidebar A</div>*@
+            }
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>

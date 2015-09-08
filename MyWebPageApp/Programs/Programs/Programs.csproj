@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31AD37D4-49DC-45D1-BF28-12CAC2A66233}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Programs</RootNamespace>
+    <AssemblyName>Programs</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="26BaseToDecimal.cs" />
+    <Compile Include="balancedparentheses.cs" />
+    <Compile Include="BinarySearch.cs" />
+    <Compile Include="BinaryTree.cs" />
+    <Compile Include="BinaryTreeInOrderWithoutRecursion.cs" />
+    <Compile Include="BinaryTreeToDoublyLinkedList.cs" />
+    <Compile Include="BoggleGame.cs" />
+    <Compile Include="BSTSuccessorAndPredecessor.cs" />
+    <Compile Include="CheckBookNumtoString.cs" />
+    <Compile Include="circularQueue.cs" />
+    <Compile Include="Combination.cs" />
+    <Compile Include="concordance.cs" />
+    <Compile Include="ConvertNumToBase.cs" />
+    <Compile Include="ConvertNumToLinkedList.cs" />
+    <Compile Include="DeleteNthElementFromLastLinkedList.cs" />
+    <Compile Include="DesignQuestion.cs" />
+    <Compile Include="FibonaciSeries.cs" />
+    <Compile Include="Find First Non Repeating Character.cs" />
+    <Compile Include="FindAnagramUsePermutation.cs" />
+    <Compile Include="FindCelebrity.cs" />
+    <Compile Include="FindDuplicates.cs" />
+    <Compile Include="FindNumInSortedMatrix.cs" />
+    <Compile Include="FindOccurencesInSortedArray.cs" />
+    <Compile Include="FindSumOfTwoElementsGivenNumber.cs" />
+    <Compile Include="FindTheNumberOfOccurencesInSortedArray.cs" />
+    <Compile Include="Heap.cs" />
+    <Compile Include="HeapMax.cs" />
+    <Compile Include="IsBalancedBinaryTree.cs" />
+    <Compile Include="IsBST.cs" />
+    <Compile Include="KMP.cs" />
+    <Compile Include="KthSmallelementBinarySearchTree.cs" />
+    <Compile Include="LinkedlistLoopFind.cs" />
+    <Compile Include="longestPalindrom.cs" />
+    <Compile Include="Lowest Common Ancesstor in Binary Tree.cs" />
+    <Compile Include="MaxSubSequenceSum.cs" />
+    <Compile Include="MergeSort.cs" />
+    <Compile Include="MergeTwoSortedArrays.cs" />
+    <Compile Include="minimumcoinProblem.cs" />
+    <Compile Include="MinimumDepthBinaryTree.cs" />
+    <Compile Include="MultiplicationUsing Recursion.cs" />
+    <Compile Include="NumberConverter.cs" />
+    <Compile Include="ParkingLot.cs" />
+    <Compile Include="Permutation.cs" />
+    <Compile Include="PhoneNumberPrint.cs" />
+    <Compile Include="PositivNegativZeroSort.cs" />
+    <Compile Include="LeafOrBoundryofBinaryTree.cs" />
+    <Compile Include="PrintAllPathBinaryTree.cs" />
+    <Compile Include="PrintMatrixSpriral.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queue.cs" />
+    <Compile Include="QueueUsingLinkedLsit.cs" />
+    <Compile Include="QueueWith2Stack.cs" />
+    <Compile Include="RandomNumber.cs" />
+    <Compile Include="RegexParser.cs" />
+    <Compile Include="Remove Duplicates from Sorted Array.cs" />
+    <Compile Include="RemoveAlternateLinkedList.cs" />
+    <Compile Include="RemoveDuplicatesFromString.cs" />
+    <Compile Include="ReplaceSpaces.cs" />
+    <Compile Include="ReverseCharactersBeforeX.cs" />
+    <Compile Include="ReverseLinkedList.cs" />
+    <Compile Include="ReverseWords.cs" />
+    <Compile Include="ReverseWordsInString.cs" />
+    <Compile Include="RootToLeafPathSum.cs" />
+    <Compile Include="RotateArray.cs" />
+    <Compile Include="RotationCount.cs" />
+    <Compile Include="SerializeAndDeserializeBtree.cs" />
+    <Compile Include="ShuffleNumbers.cs" />
+    <Compile Include="SingletonThreadSafe.cs" />
+    <Compile Include="Stack.cs" />
+    <Compile Include="StringReversalinPlace_and_Recursion.cs" />
+    <Compile Include="SubArraySumK.cs" />
+    <Compile Include="SubTree.cs" />
+    <Compile Include="SumTwoLinkedList.cs" />
+    <Compile Include="SwapAlternative.cs" />
+    <Compile Include="test.cs" />
+    <Compile Include="topKitem.cs" />
+    <Compile Include="TopKMaxNumbers.cs" />
+    <Compile Include="Trie.cs" />
+    <Compile Include="UnlockNum3X3Matrix.cs" />
+    <Compile Include="ZeroEntireRowAndColumn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
