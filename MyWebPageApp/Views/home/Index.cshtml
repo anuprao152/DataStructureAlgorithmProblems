@@ -1,0 +1,152 @@
+﻿@{
+   // Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+  @*@section  banner{ <img src="~/Content/Images/banner.png" /> }*@
+@*section  banner{
+    <img src="~/Content/Images/AnupBanner.jpg" />
+ }*@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page</title>
+    <link href="~/Content/Main.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="~/Scripts/AboutMe.js"></script>
+</head>
+    
+<body>
+    <div id="mainPage">
+        
+         @* <h1>Welcome to My Home Page</h1>*@
+        @*<div>
+            <div style="/*background:grey;*/ float:left"><img src="~/Content/Images/Anup_Banner.jpg" /></div>
+            <div style="border:1px solid; border-color:black; background:green;"></div>
+        </div>*@
+      @*  <div style="clear:both">
+            <div id="MyInfor" style="border:1px solid; border-color:black; margin:10px;  float:left" >
+                <div id="Profilepic" style="color:red; width:200px; height:200px; float:left; border:1px solid; border-color:black; margin:15px; background:red" ></div>
+                <div style=" border:1px solid; border-color:black; background:green; width:500px; height:600px; margin:15px; ">
+                    <p>Hello, My name is Anup and I am a Sftware Developer in Amsterdam Printing & Litho who specialize in software development that maintain design standards, correctness
+                        OOPs Conecepts. Master in Computer Science and 4 years of solid developmentexperience have made me a successful and confident 
+
+                    </p>
+                </div>
+           
+            </div>
+            <div style="border:1px solid; border-color:black; background:blue; /*width:250px;*/ height:1000px; margin:10px; margin-left:550px"> 
+                <div id="Profilepic1" style="color:red; width:100px; height:100px; float:left; border:1px solid; border-color:black; margin:15px; background:red" ></div>
+                <div style=" border:1px solid; border-color:black; background:green; width:500px; height:200px; margin:15px; "></div>
+                <div id="Profilepic2" style="color:red; width:100px; height:100px; float:left; border:1px solid; border-color:black; margin:15px; background:red" ></div>
+                <div style=" border:1px solid; border-color:black; background:green; width:500px; height:200px; margin:15px; "></div>
+                <div id="Profilepic3" style="color:red; width:100px; height:100px; float:left; border:1px solid; border-color:black; margin:15px; background:red" ></div>
+                <div style=" border:1px solid; border-color:black; background:green; width:500px; height:200px; margin:15px; "></div>
+            </div>
+        </div>*@
+
+
+<div class="container">
+
+    <!-- Section 1 -->
+   @* <div>
+          <div class="headline low-margin"><h3>Hello</h3></div>
+    </div>*@
+            
+    <!-- Anup Rao -->
+    <div class="one-third column">
+	<div class="headline"><h4>About Me</h4></div>
+		
+        <p id="EduDetail"></p>
+		<p id="CurWork"></p>
+        <p id="qualification"></p>
+    </div>
+        
+    <!-- Anup Rao -->
+    <div class="second-third column">
+    <div class="headline"><h4>Professional Experience</h4></div>
+        <div id="professional">
+            <p></p>
+        	<p></p>
+			<p></p>
+			<p></p>
+        </div>
+  	</div>
+
+    <div class="third-third column">
+    <div class="headline">
+        <h4>Education</h4>
+    </div>
+        <div id="Edu">
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+
+     <!-- Anup Rao Skills Section -->
+     <div class="Seprater_Headline" style="clear:both" >
+            Qualification
+     </div>
+
+    <div class="skillset">
+        <div class="headline">
+           <h4>Technical</h4>
+        </div>
+        <div id="tech" class="arrow_list">
+        </div>
+    </div>
+
+    <div class="skillset">
+        <div class="headline">
+           <h4>Front-End</h4>
+        </div>
+        <div id="front-end" class="arrow_list">
+        </div>
+    </div>
+
+    <div class="skillset">
+        <div class="headline">
+           <h4>Working Knowladge</h4>
+        </div>
+        <div id="working-Knowladge" class="arrow_list">
+        </div>
+    </div>
+
+    <div class="skillset">
+        <div class="headline">
+           <h4>Database</h4>
+        </div>
+        <div id="Database" class="arrow_list">
+        </div>
+    </div>
+
+    <!--Resume -->
+    <div class="skillset">
+        <div class="headline">
+            <h4>Downloads</h4>
+        </div>
+         <div id="ResumeDiv">
+             <h2>Resume</h2>
+             <a class="button medium color">Download</a>
+         </div>
+    </div>
+        
+  </div>
+
+        @*<div>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                <li>@Html.ActionLink("Problem","Index","Problem")</li>
+                <li>@Html.ActionLink("About", "Index", "About")</li>
+                <li>@Html.ActionLink("Blog", "Index", "Blog")</li>
+                <li>@Html.ActionLink("Technology", "Index", "Technology")</li>
+                <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+            </ul>
+        </div>*@
+    </div>
+
+
+</body>
+</html>

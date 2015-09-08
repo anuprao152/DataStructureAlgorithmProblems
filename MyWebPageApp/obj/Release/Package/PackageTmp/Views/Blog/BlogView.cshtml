@@ -1,0 +1,97 @@
+﻿@model IEnumerable<ProblemsStore.Domain.Entities.BlogContent>
+@{
+    //Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Blog.css")"  rel="stylesheet" />
+    <title>Blog View</title>
+</head>
+<body>
+
+<div class="BlogName"><h2>@ViewBag.BlogName</h2></div>
+<div class="Blog">
+
+    @foreach (var content in Model)
+    {
+        if (content.Paragraph != null)
+        {
+            @Html.Action("Index", "Paragraph", new { Id = content.Paragraph.Id })
+        }
+        else if (content.Heading != null)
+        {
+            <div>@Html.Action("Index","Header", new {Id = content.Heading.Id})</div>
+        }
+        else if (content.Bullet != null)
+        {
+            <div class="Bullet">@Html.Action("Index","Bullet", new {Id = content.Bullet.Id})</div>
+        }
+        @*else if (content.Image != null)
+        {
+            @Html.Action("Index", "Image", new { Id = content.Image.Id })
+        }*@
+        else if (content.Problem != null)
+        {
+             @Html.Action("ProblemSolutionPartialView", "Problem", new { id = content.Problem.Id })
+        }
+       
+        
+    }
+</div>
+
+   @* <div>
+    @using (Html.BeginForm()){
+        <div>Heading:</div>
+        <div>@Html.EditorFor(model => model.Heading) </div>
+        <br />
+             
+        <div>Paragraph :</div>
+            foreach ( var par in Model.Paragraph)
+            {
+                <div>@Html.EditorFor( model => par.Heading)</div>
+                <div>@Html.EditorFor( model => par.Content)</div>
+            }
+        <br />
+             
+        <div>BulletList :</div>
+            <div>@Html.TextAreaFor(model =>  Model.BulletList.Heading)</div>
+            foreach ( var point in Model.BulletList.points)
+            {
+                <div>@Html.EditorFor(model => point)</div>
+            }
+        <br />
+        
+        <div>Image :</div>
+            foreach ( var image in Model.Images)
+            {
+                <div>@Html.EditorFor(model => image.ImageUrl)</div>
+                <div>@Html.EditorFor(model => image.Caption)</div>
+                <div>@Html.EditorFor(model => image.Description)</div>
+            }
+        <br />
+             
+        <div>Image :</div>
+        foreach ( var video in Model.Videos)
+        {
+            <div>@Html.EditorFor(model => video.VideoUrl)</div>
+            <div>@Html.EditorFor(model => video.Caption)</div>
+            <div>@Html.EditorFor(model => video.Description)</div>
+        }
+        <br />
+             
+        <div>Url :</div>
+        <div>@Html.EditorFor(model => model.Url)</div>
+        <div>
+           <input type="submit" title="Submit" value="Submit"/>
+        </div>
+         }
+    </div>*@
+</body>
+</html>
+
+

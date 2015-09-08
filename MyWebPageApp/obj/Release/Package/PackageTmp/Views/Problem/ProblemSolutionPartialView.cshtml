@@ -1,0 +1,24 @@
+﻿@model ProblemsStore.Domain.Entities.Problems
+
+@*@{
+    Layout = "~/Views/_BasicLayout.cshtml";
+}*@
+
+<h2 class="title">@Html.DisplayFor( modelItem => Model.Title)</h2>
+<div>
+@*<div class="tagged"> Microsoft </div>*@
+
+<div class="postdate">
+   @* <div> @ViewBag.PostDate</div>*@
+    <div>@Html.DisplayFor( modelItem => Model.PostDate)</div>
+</div>
+
+</div>
+
+@*<p>@Html.DisplayFor( modelItem => Model.Problem)</p>*@
+@*<p>@Html.DisplayFor( modelItem => Model.Description)</p>*@
+	
+<div>
+    <pre class="prettyprint"><code>@ViewBag.codeSnippet</code></pre>
+</div>
+

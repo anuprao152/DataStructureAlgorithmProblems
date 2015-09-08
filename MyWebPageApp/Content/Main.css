@@ -1,0 +1,128 @@
+﻿body {
+    height:800px;
+}
+
+
+/* Main Page CSS  */
+#mainPage {
+    height:800px;
+    background: #fff;
+    font: 13px Arial, sans-serif;
+    color: #666;
+    margin:0px;
+    padding:0px 19px 0px 19px;
+}
+
+.one-third.column
+{
+    width: 400px;
+    float: left;
+    margin-right: 40px;
+}
+
+.second-third.column
+{
+    width: 350px;
+    float: left;
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+.third-third.column
+{
+    /*width: 320px;*/
+    float: left;
+    margin-right: 10px;
+    margin-left:10px;
+}
+
+.headline
+{
+    background: url(Images/headline-bg.png) 0 50% repeat-x;
+    /*display: block;*/
+    /*margin: 30px 0 8px 0;*/
+}
+
+.Seprater_Headline
+{
+     background: url(Images/headline-bg.png) 0 50% repeat-x;
+     display: block;
+     margin: 30px 0 8px 0;
+     font-size:14px;
+     font-weight:bold;
+}
+
+h4
+{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#mainPage p{
+    margin: 0 0 15px 0;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.arrow_list 
+{
+    margin: 0 0 15px 0;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.arrow_list ul
+{
+    list-style:none;
+    padding-left:0px;
+    padding-top:0px;
+}
+
+.arrow_list ul li
+{
+    background:url(Images/list_arrow.png) no-repeat 0% 50%;
+    padding:0 0 0 16px;
+}
+
+
+.skillset
+{
+    float:left;
+    margin-right:20px;
+    width:200px;
+}
+
+#ResumeDiv
+{
+    float:left;
+    padding:0px 32px 32px 32px;
+    background-color:#fafafa;
+    border:1px solid #ddd;
+    width:136px;
+}
+
+.button, input[type="button"]
+{
+    padding: 9px 12px;
+    display: inline-block;
+    border: 0px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+}
+
+.button.medium {
+    padding: 11px 17px;
+    font-size: 14px;
+}
+
+.button.color {
+    color: #fff;
+    background: #72b626;
+}
+
+a
+{
+    text-decoration:none;
+}

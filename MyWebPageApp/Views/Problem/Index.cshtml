@@ -1,0 +1,47 @@
+﻿@*@model IEnumerable<ProblemsStore.Domain.Entities.Problems>*@
+@model MyWebPageApp.Models.ProblemsViewModel
+
+@{
+    Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+@section subNav
+{
+    <div id="subNav">
+        <ul>
+            @foreach (var ds in @Model.DS)   
+            {
+               <li> @Html.ActionLink(ds.DataStructName,"Index")</li>
+              
+            } 
+        </ul>
+    </div>
+}
+@section SideBar{
+<div id="SideBar">
+    <ul>
+        @foreach (var prob in @Model.Problems)
+        {
+           <li>@Html.ActionLink(prob.Title, "Index", new { Pid = prob.Id })</li>
+        }
+    </ul>
+ </div>
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/prettify.css")"  rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/prettify.js"></script>
+    <script type="text/javascript" src="~/Scripts/run_prettify.js"></script>
+    <link href="@Url.Content("~/Content/problem.css")"  rel="stylesheet" />
+    <title>Data Structor And Algorithm Problems</title>
+</head>
+<body>
+    <div class="ProblemSolution">
+       @Html.Action("ProblemSolutionPartialView", "Problem", new { id = @ViewBag.childId })
+    </div>
+</body>
+</html>

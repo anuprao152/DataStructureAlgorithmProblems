@@ -1,0 +1,10 @@
+﻿@model ProblemsStore.Domain.Entities.Paragraph
+
+<div>
+    @if (Model != null)
+    {
+        <div>@Html.Action("Index", "Header", new { Id = Model.HeaderId })</div>
+
+        <div class="paragraph"><p>@Html.DisplayFor(model => model.Content)</p></div>
+    }
+</div>

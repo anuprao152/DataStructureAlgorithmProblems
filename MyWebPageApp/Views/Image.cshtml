@@ -1,0 +1,14 @@
+﻿@model ProblemsStore.Domain.Entities.Image
+
+<div>
+@Html.LabelFor(m => m.ImageUrl)
+@Html.TextBoxFor(m => m.ImageUrl);
+
+@Html.LabelFor(m => m.Caption)
+@Html.EditorFor(m => m.Caption)
+
+@Html.LabelFor(m => m.Description)
+@Html.EditorFor(m => m.Description)
+
+</div>
+

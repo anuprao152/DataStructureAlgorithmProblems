@@ -1,0 +1,32 @@
+﻿@model ProblemsStore.Domain.Entities.DataStructAlgoProb
+
+@{
+    Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+         @using (Html.BeginForm()){
+        <div>Question :</div>
+        <div>@Html.TextAreaFor(model => model.Problem, new { style = "width:50% ; height:100px" })</div>
+        <br />
+        <div>Solution :</div>
+        <div>@Html.TextAreaFor(model => model.SolutionUrl, new { style = "width:50% ; height:100px" })</div>
+        <br />
+        <div>Description :</div>
+        <div>@Html.TextAreaFor(model => model.Description, new { style = "width:50% ; height:100px" })</div>
+        <br />
+        <div>
+           <input type="submit" title="Submit" value="Submit"/>
+        </div>
+         }
+    </div>
+</body>
+</html>

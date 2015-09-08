@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/15/2013 09:19:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/07/2013 20:35:40</publishTime>
+    </File>
+    <File Include="bin/MyWebPageApp.dll">
+      <publishTime>09/25/2013 20:08:26</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/07/2013 20:35:39</publishTime>
+    </File>
+    <File Include="bin/ProblemsStore.Domain.dll">
+      <publishTime>08/24/2013 20:10:27</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/07/2013 20:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/07/2013 20:35:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/07/2013 20:35:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/07/2013 20:35:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/07/2013 20:35:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/07/2013 20:35:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/07/2013 20:35:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/07/2013 20:35:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/07/2013 20:35:41</publishTime>
+    </File>
+    <File Include="Content/Blog.css">
+      <publishTime>07/05/2013 13:52:40</publishTime>
+    </File>
+    <File Include="Content/Images/AnupBanner.jpg">
+      <publishTime>08/25/2013 18:52:13</publishTime>
+    </File>
+    <File Include="Content/Images/Anup_Banner.jpg">
+      <publishTime>08/25/2013 19:21:31</publishTime>
+    </File>
+    <File Include="Content/Images/banner.png">
+      <publishTime>08/25/2013 15:20:39</publishTime>
+    </File>
+    <File Include="Content/Images/BannerBack.jpg">
+      <publishTime>08/25/2013 19:26:53</publishTime>
+    </File>
+    <File Include="Content/Images/bullet_bck.gif">
+      <publishTime>06/06/2013 22:13:18</publishTime>
+    </File>
+    <File Include="Content/Images/bullet_pdp.gif">
+      <publishTime>06/06/2013 22:13:28</publishTime>
+    </File>
+    <File Include="Content/Images/bullet_right.png">
+      <publishTime>07/05/2013 10:36:29</publishTime>
+    </File>
+    <File Include="Content/Images/coming_soon.jpg">
+      <publishTime>08/10/2013 12:26:21</publishTime>
+    </File>
+    <File Include="Content/Images/right_arrow.gif">
+      <publishTime>10/09/2012 09:46:27</publishTime>
+    </File>
+    <File Include="Content/Main.css">
+      <publishTime>08/17/2013 14:45:36</publishTime>
+    </File>
+    <File Include="Content/prettify.css">
+      <publishTime>06/02/2013 23:31:54</publishTime>
+    </File>
+    <File Include="Content/problem.css">
+      <publishTime>07/09/2013 15:29:45</publishTime>
+    </File>
+    <File Include="Content/resume.css">
+      <publishTime>08/20/2013 14:56:09</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/17/2013 14:45:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/07/2013 20:35:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/16/2013 10:26:15</publishTime>
+    </File>
+    <File Include="Scripts/prettify.js">
+      <publishTime>05/31/2013 22:32:17</publishTime>
+    </File>
+    <File Include="Scripts/run_prettify.js">
+      <publishTime>05/31/2013 22:40:36</publishTime>
+    </File>
+    <File Include="Views/Blog/BlogView.cshtml">
+      <publishTime>08/24/2013 16:05:04</publishTime>
+    </File>
+    <File Include="Views/Blog/Create.cshtml">
+      <publishTime>08/24/2013 20:28:32</publishTime>
+    </File>
+    <File Include="Views/Blog/CreateBlog.cshtml">
+      <publishTime>06/22/2013 18:42:11</publishTime>
+    </File>
+    <File Include="Views/Blog/ImageView.cshtml">
+      <publishTime>06/28/2013 16:04:28</publishTime>
+    </File>
+    <File Include="Views/Bullet/Create.cshtml">
+      <publishTime>07/07/2013 20:50:27</publishTime>
+    </File>
+    <File Include="Views/Bullet/Index.cshtml">
+      <publishTime>07/05/2013 10:43:37</publishTime>
+    </File>
+    <File Include="Views/Error/HttpError404.cshtml">
+      <publishTime>08/10/2013 12:31:58</publishTime>
+    </File>
+    <File Include="Views/Header/Index.cshtml">
+      <publishTime>07/05/2013 13:42:17</publishTime>
+    </File>
+    <File Include="Views/home/Index.cshtml">
+      <publishTime>08/26/2013 01:35:11</publishTime>
+    </File>
+    <File Include="Views/Paragraph/Create.cshtml">
+      <publishTime>07/07/2013 21:49:03</publishTime>
+    </File>
+    <File Include="Views/Paragraph/ParagraphView.cshtml">
+      <publishTime>07/07/2013 21:13:16</publishTime>
+    </File>
+    <File Include="Views/Problem/Create.cshtml">
+      <publishTime>06/02/2013 20:39:08</publishTime>
+    </File>
+    <File Include="Views/Problem/Index.cshtml">
+      <publishTime>08/10/2013 12:32:28</publishTime>
+    </File>
+    <File Include="Views/Problem/ProblemSolutionPartialView.cshtml">
+      <publishTime>08/02/2013 18:47:43</publishTime>
+    </File>
+    <File Include="Views/Resume/Index.cshtml">
+      <publishTime>08/20/2013 14:45:08</publishTime>
+    </File>
+    <File Include="Views/StringList.cshtml">
+      <publishTime>06/22/2013 18:38:11</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/07/2013 20:35:34</publishTime>
+    </File>
+    <File Include="Views/_BasicLayout.cshtml">
+      <publishTime>08/25/2013 15:49:41</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/20/2013 10:14:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/12/2013 22:46:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

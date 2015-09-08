@@ -1,0 +1,145 @@
+﻿/*Anup Rao*/
+
+/*default margin*/
+html,body {
+    margin:0;
+    padding:0;
+    max-width:1220px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+#page-Container {
+    /*background : red;*/
+    width:760px;
+    margin:auto; /*center the container*/
+}
+
+#main-nav {
+    /*background:#999999;*/
+    height:60px;
+    /*border-bottom:solid 1px #999999;*/
+    font-size:20px;
+    /*background:#B0B0B0;*/
+    background:url(Images/menu-bg.jpg) repeat-x;
+}
+
+#subNav {
+background-color: #f0f0f0;
+border-bottom: 1px solid #d8d8d8;
+color: #333;
+font-size: 17px;
+height: 33px;
+margin-bottom:15px;
+}
+
+#header {
+    /*background:blue;*/
+    height:50px;
+    margin:10px 0px 0px 10px;
+}
+
+#footer {
+    background:#6ec668;
+    height:66px;
+    clear:both;
+}
+
+#SideBar {
+   /* background:darkgreen;*/ 
+    float:left;
+    width:280px; /*left side fix width for side bar*/
+    border-right:solid 1px #999999;
+    margin:0px -1px 0px 0px;
+    list-style-image: url("Images/bullet_pdp.gif");
+    list-style-position: outside;
+      /*height not fixed, set according to content*/
+}
+
+    #SideBar ul {
+        margin:0px 5px 0px -45px;
+    }
+    #SideBar ul li {
+        background-image:url("Images/bullet_bck.gif");
+        margin-bottom: 7px;
+    }
+
+    #SideBar ul li a {
+        text-decoration:none;
+    }
+
+#content {
+    /*background:green;*/
+    margin-left:280px;/*start content area should along with the side bar so set margin-left :280px */
+    padding-left:20px;
+    /*border-left: 1px solid #b6b6b6;*/
+    /*height not fixed, set according to content*/
+}
+
+/*additional structure*/
+
+.hidden {
+    display:none;
+}
+
+/*h1 tag has default margin, so remove that*/
+h1 {
+    margin:0;
+    padding:0;
+}
+
+/*Menu */
+
+#main-nav ul {
+    padding:0;
+    list-style-type:none;
+    margin:5px 1px 5px 1px;
+}
+
+#main-nav ul li {
+    padding:10px;
+   /*float:left;*/ 
+   display:inline-block;
+   /*background:#999999;*/
+}
+
+#main-nav ul li a {
+text-decoration:none;
+color:#333;
+}
+
+#subNav ul {
+    padding:0;
+    list-style-type:none;
+    margin:5px 1px 5px 1px;
+}
+
+#subNav ul li {
+    padding:6px;
+   /*float:left;*/ 
+   display:inline-block;
+   /*background:#999999;*/
+}
+
+#subNav ul li a {
+text-decoration:none;
+color:#333;
+}
+
+
+
+/*.codeContainer {
+    border:solid 1px #999999
+}
+
+#codeSnippetContainer {
+    padding:10px 21px 21px 10px;
+    width:auto;
+    color:black;
+}*/
+
+div#body {
+    padding:19px;
+    margin:0px;
+}
+

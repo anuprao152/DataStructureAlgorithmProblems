@@ -1,0 +1,76 @@
+﻿body {
+    background:#FFF;
+}
+
+/* Headers Start*/
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+ 
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+ 
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+ 
+h4 {
+    font-size: 18px;
+    line-height: 20px;
+    margin:0px;
+    font-weight:normal;
+    font-family: 'Questrial', sans-serif;
+}
+ 
+/* Headers End*/
+
+.Blog {
+    font-family:sans-serif;
+}
+
+p {
+    color: #555;  
+    font-family: "Segoe UI",Arial,Sans-Serif;
+    line-height: 24px;
+}
+
+p:first-letter {
+    font-weight:bold;
+    font-size:25px;
+    margin-left:25px;
+}
+
+.Bullet ul{
+	margin: 5px 0px 0px 0px;
+	padding-top:1px;
+    list-style-type:none;
+    list-style-image:url("/Content/Images/bullet_right.png")
+}
+
+.Bullet ul li {
+    margin-top:5px;
+    color: #555;
+    font-family: "Segoe UI",Arial,Sans-Serif;
+}
+
+.BlogName {
+height: 60px;
+/*min-width: 960px;*/
+background: #f7f7f7;
+border-bottom: 1px solid #dfdfdf; 
+margin:0px 0px 10px 0px;
+}
+
+.BlogName h2 {
+color: #555;
+font-size: 28px;
+line-height: 10px;
+text-shadow: #fff 0px 1px 0px;
+padding-left: 12px;
+float: left;
+text-rendering: optimizeLegibility;
+}

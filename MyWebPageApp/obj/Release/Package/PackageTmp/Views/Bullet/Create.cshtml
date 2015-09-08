@@ -1,0 +1,22 @@
+﻿@model ProblemsStore.Domain.Entities.BulletList
+
+@{
+    ViewBag.Title = "Create Bullets";
+}
+
+<h2>Create Bullet</h2>
+
+<div class="CreateBullet">
+
+ @using(@Html.BeginForm("Create","Bullet")){
+
+
+        <div>@Html.LabelFor(model => model.Heading)</div>
+        <div>@Html.EditorFor( model => model.Heading.Heading)</div>
+        <div>@Html.LabelFor(model => model.point)</div>
+        <div>@Html.EditorFor( model => model.point)</div>
+        
+
+        <input type="submit" title="Submit" />
+ }
+</div>
