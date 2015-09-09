@@ -5,6 +5,5 @@ C:\Users\arao\documents\visual studio 2012\Projects\MyWebPageApp\Infra\obj\Debug
 C:\Users\arao\documents\visual studio 2012\Projects\MyWebPageApp\Infra\obj\Debug\Infra.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\bin\Debug\Infra.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\bin\Debug\Infra.pdb
-C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.pdb

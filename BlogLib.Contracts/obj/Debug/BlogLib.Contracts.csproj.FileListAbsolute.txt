@@ -1,5 +1,4 @@
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\bin\Debug\BlogLib.Contracts.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\bin\Debug\BlogLib.Contracts.pdb
-C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.pdb

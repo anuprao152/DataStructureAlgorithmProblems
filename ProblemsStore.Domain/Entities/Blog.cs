@@ -17,6 +17,8 @@ namespace ProblemsStore.Domain.Entities
         public virtual ICollection<BulletList> Bullets { get; set; }
         public virtual ICollection<Image> Images { get; set; }
         public virtual ICollection<Problems> Problems { get; set; }
+
+        public DateTime EnterDate { get; set; }
         //public virtual ICollection<Video> Videos { get; set; }
     }
 }

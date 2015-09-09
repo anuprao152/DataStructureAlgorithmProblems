@@ -96,7 +96,7 @@ namespace MvcApplication1.Controllers
             if (id != null)
             {
                 probSol = ProblemsRepository.ProblemRepository.GetByID(id);
-                probSol.PostDate = DateTime.Now;
+                probSol.EnterDate = DateTime.Now;
                 //@ViewBag.PostDate = probSol.PostDate.ToString("D");
                 @ViewBag.CodeSnippet = DisplayCodeSnippet(probSol.SolutionUrl);
             }

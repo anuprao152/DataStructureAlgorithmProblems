@@ -15,6 +15,7 @@ namespace ProblemsStore.Domain.Entities
         [StringLength(500)]
         public string Caption { get; set; }
 
+        
         public string Description { get; set; }
 
         //Nullable Blog Id as a ForeignKey

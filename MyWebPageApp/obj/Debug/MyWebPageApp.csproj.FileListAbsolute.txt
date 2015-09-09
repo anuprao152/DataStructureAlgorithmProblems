@@ -44,7 +44,6 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Web.
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Web.WebPages.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Web.WebPages.Razor.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\EntityFramework.xml
-C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\ProblemsStore.Domain.pdb
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\Newtonsoft.Json.xml
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Net.Http.Formatting.xml
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Web.Helpers.xml
@@ -58,3 +57,4 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\System.Web.
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\obj\Debug\MyWebPageApp.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\obj\Debug\MyWebPageApp.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\obj\Debug\MyWebPageApp.pdb
+C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\bin\ProblemsStore.Domain.pdb

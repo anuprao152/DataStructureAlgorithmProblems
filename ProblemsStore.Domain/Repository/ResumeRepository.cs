@@ -95,8 +95,8 @@ namespace ProblemsStore.Domain.Repository
 
             };
 
-            Jobs.ForEach(j => context.Jobs.Add(j));
-            context.SaveChanges();
+            //Jobs.ForEach(j => context.Jobs.Add(j));
+            //context.SaveChanges();
 
             Jobs[0].Technologies.Add(Technologies[0]);
             Jobs[0].Technologies.Add(Technologies[1]);
@@ -125,16 +125,16 @@ namespace ProblemsStore.Domain.Repository
                    //ProjDesc = "Developed and implemented a color based technique for detecting frontal human faces in images."},
             };
 
-            Projects.ForEach(p => context.Projects.Add(p));
-            context.SaveChanges();
+            //Projects.ForEach(p => context.Projects.Add(p));
+            //context.SaveChanges();
 
             List<Certification> Certifications = new List<Certification>{
                 new Certification { Name= "Microsoft .Net Framework 3.5, ASP.Net Application Development" },
                 new Certification { Name= "Microsoft .Net Framework, Application Development Foundation."}
             };
 
-            Certifications.ForEach( c => context.Certifications.Add(c));
-            context.SaveChanges();
+            //Certifications.ForEach( c => context.Certifications.Add(c));
+            //context.SaveChanges();
 
             List<University> Univs = new List<University>{
                 new University { Degree="Master of Science in Computer Science", UnivName ="Rochester Institute of Technology", Address="Rochester, NY", GPA ="3.04", GradDate="May 2011"},
