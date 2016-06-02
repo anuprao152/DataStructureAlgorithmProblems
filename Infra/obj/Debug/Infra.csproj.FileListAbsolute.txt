@@ -8,8 +8,3 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\bin\Debug\Infra.pdb
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\Infra\bin\Debug\Infra.dll
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\Infra\bin\Debug\Infra.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.csprojResolveAssemblyReference.cache
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.dll
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\Infra\obj\Debug\Infra.pdb

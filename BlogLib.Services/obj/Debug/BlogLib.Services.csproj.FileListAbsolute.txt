@@ -5,6 +5,5 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Services\obj\Debug\B
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\BlogLib.Services\obj\Debug\BlogLib.Services.pdb
 C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\BlogLib.Services\bin\Debug\BlogLib.Services.dll
 C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\BlogLib.Services\bin\Debug\BlogLib.Services.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\BlogLib.Services\obj\Debug\BlogLib.Services.csprojResolveAssemblyReference.cache
 C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\BlogLib.Services\obj\Debug\BlogLib.Services.dll
 C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\BlogLib.Services\obj\Debug\BlogLib.Services.pdb
