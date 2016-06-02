@@ -14,5 +14,3 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Progra
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Programs\obj\Release\Programs.csprojResolveAssemblyReference.cache
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Programs\bin\Release\Programs.exe
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Programs\bin\Release\Programs.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Programs\obj\Release\Programs.exe
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\MyWebPageApp\Programs\Programs\obj\Release\Programs.pdb

@@ -22,19 +22,20 @@ namespace ProblemsStore.Domain.Repository
             //             .WithMany(b => b.Technologies);
                          //.HasForeignKey(b => b.FKTechnologyId);
 
+            modelBuilder.Entity<Problems>().ToTable("Problems");
+            modelBuilder.Entity<Blog>().ToTable("Blogs");
 
             //one-to-many Relationship between DataStructure and Problems
-            modelBuilder.Entity<Problems>().HasRequired(Prob => Prob.DataStructure).WithMany();
-
+            modelBuilder.Entity<Problems>().HasRequired(Prob => Prob.DataStructure).WithMany();   
                         
         }
 
         public DbSet<Problems> Problems { get; set; }
         //public DbSet<Resume> Resume { get; set; }
-        public DbSet<Jobs> Jobs { get; set; }
+        //public DbSet<Jobs> Jobs { get; set; }
         public DbSet<Technology> Technologies { get; set; }
-        public DbSet<Certification> Certifications { get; set; }
-        public DbSet<Project> Projects { get; set; }
+        //public DbSet<Certification> Certifications { get; set; }
+        //public DbSet<Project> Projects { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<DataStructure> DatatStructures {get;set;}
@@ -44,9 +45,11 @@ namespace ProblemsStore.Domain.Repository
         public DbSet<BlogContent> BlogContents { get; set; }
         public DbSet<Paragraph> Paragraphs { get; set; }
         public DbSet<Image> Images { get; set; }
-        public DbSet<Video> Videos { get; set; }
+        //public DbSet<Video> Videos { get; set; }
         public DbSet<BulletList> BulletLists { get; set; }
         public DbSet<Header> Headers { get; set; }
+
+
 
         //Test
         //public DbSet<ZipData> ZipDatas { get; set; }

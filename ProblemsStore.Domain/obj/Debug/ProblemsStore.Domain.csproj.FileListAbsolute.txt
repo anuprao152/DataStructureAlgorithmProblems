@@ -14,11 +14,3 @@ C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Deb
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.dll
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.pdb
 C:\Users\i54763\Documents\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.csprojResolveAssemblyReference.cache
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.dll.config
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.dll
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debug\EntityFramework.dll
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debug\EntityFramework.xml
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.dll
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.pdb
-C:\Users\Anup Rao\Documents\My Web Sites\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.csprojResolveAssemblyReference.cache

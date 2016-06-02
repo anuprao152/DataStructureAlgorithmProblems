@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlogLib.Services
 {
-    public class TestClass1
+    public class Class1
     {
     }
 }
