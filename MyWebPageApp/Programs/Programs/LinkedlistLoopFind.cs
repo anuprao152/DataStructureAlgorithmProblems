@@ -70,5 +70,20 @@ namespace programs
 
             temp = null;
         }
+
+        public int Length
+        {
+            get
+            {
+                var cur = head;
+                int count = 0;
+                while(cur!=null)
+                {
+                    count++;
+                    cur = cur.next;
+                }
+                return count;
+            }
+        }
     }
 }

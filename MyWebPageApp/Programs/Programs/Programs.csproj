@@ -68,23 +68,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="26BaseToDecimal.cs" />
+    <Compile Include="2Sum.cs" />
+    <Compile Include="AmazonSponsorshipChain.cs" />
+    <Compile Include="Anagram.cs" />
     <Compile Include="balancedparentheses.cs" />
+    <Compile Include="BFSAlgo.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BinaryTree.cs" />
     <Compile Include="BinaryTreeInOrderWithoutRecursion.cs" />
     <Compile Include="BinaryTreeToDoublyLinkedList.cs" />
     <Compile Include="BoggleGame.cs" />
     <Compile Include="BSTSuccessorAndPredecessor.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="ChatServer.cs" />
     <Compile Include="CheckBookNumtoString.cs" />
+    <Compile Include="Chess.cs" />
     <Compile Include="circularQueue.cs" />
+    <Compile Include="CloneLinkedList.cs" />
     <Compile Include="Combination.cs" />
     <Compile Include="concordance.cs" />
+    <Compile Include="ConnectedIsland.cs" />
     <Compile Include="ConvertNumToBase.cs" />
     <Compile Include="ConvertNumToLinkedList.cs" />
+    <Compile Include="CountAllPathInMatrix.cs" />
     <Compile Include="DeleteNthElementFromLastLinkedList.cs" />
     <Compile Include="DesignQuestion.cs" />
+    <Compile Include="Djkstras.cs" />
     <Compile Include="FibonaciSeries.cs" />
+    <Compile Include="FileSystem.cs" />
     <Compile Include="Find First Non Repeating Character.cs" />
+    <Compile Include="FindAnagamFromFile.cs" />
     <Compile Include="FindAnagramUsePermutation.cs" />
     <Compile Include="FindCelebrity.cs" />
     <Compile Include="FindDuplicates.cs" />
@@ -92,6 +105,7 @@
     <Compile Include="FindOccurencesInSortedArray.cs" />
     <Compile Include="FindSumOfTwoElementsGivenNumber.cs" />
     <Compile Include="FindTheNumberOfOccurencesInSortedArray.cs" />
+    <Compile Include="HashTableLinearProbing.cs" />
     <Compile Include="Heap.cs" />
     <Compile Include="HeapMax.cs" />
     <Compile Include="IsBalancedBinaryTree.cs" />
@@ -102,17 +116,21 @@
     <Compile Include="longestPalindrom.cs" />
     <Compile Include="Lowest Common Ancesstor in Binary Tree.cs" />
     <Compile Include="MaxSubSequenceSum.cs" />
+    <Compile Include="Maze.cs" />
     <Compile Include="MergeSort.cs" />
     <Compile Include="MergeTwoSortedArrays.cs" />
     <Compile Include="minimumcoinProblem.cs" />
     <Compile Include="MinimumDepthBinaryTree.cs" />
     <Compile Include="MultiplicationUsing Recursion.cs" />
     <Compile Include="NumberConverter.cs" />
+    <Compile Include="NumberToWords.cs" />
     <Compile Include="ParkingLot.cs" />
     <Compile Include="Permutation.cs" />
+    <Compile Include="PhoneDictionary.cs" />
     <Compile Include="PhoneNumberPrint.cs" />
     <Compile Include="PositivNegativZeroSort.cs" />
     <Compile Include="LeafOrBoundryofBinaryTree.cs" />
+    <Compile Include="PrefixMatchingTrie.cs" />
     <Compile Include="PrintAllPathBinaryTree.cs" />
     <Compile Include="PrintMatrixSpriral.cs" />
     <Compile Include="Program.cs" />
@@ -120,12 +138,14 @@
     <Compile Include="Queue.cs" />
     <Compile Include="QueueUsingLinkedLsit.cs" />
     <Compile Include="QueueWith2Stack.cs" />
+    <Compile Include="QuickSort.cs" />
     <Compile Include="RandomNumber.cs" />
     <Compile Include="RegexParser.cs" />
     <Compile Include="Remove Duplicates from Sorted Array.cs" />
     <Compile Include="RemoveAlternateLinkedList.cs" />
     <Compile Include="RemoveDuplicatesFromString.cs" />
     <Compile Include="ReplaceSpaces.cs" />
+    <Compile Include="ReservoirSampling.cs" />
     <Compile Include="ReverseCharactersBeforeX.cs" />
     <Compile Include="ReverseLinkedList.cs" />
     <Compile Include="ReverseWords.cs" />
@@ -134,9 +154,12 @@
     <Compile Include="RotateArray.cs" />
     <Compile Include="RotationCount.cs" />
     <Compile Include="SerializeAndDeserializeBtree.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="ShuffleLinkedList.cs" />
     <Compile Include="ShuffleNumbers.cs" />
     <Compile Include="SingletonThreadSafe.cs" />
     <Compile Include="Stack.cs" />
+    <Compile Include="StackGetMin.cs" />
     <Compile Include="StringReversalinPlace_and_Recursion.cs" />
     <Compile Include="SubArraySumK.cs" />
     <Compile Include="SubTree.cs" />
@@ -147,7 +170,9 @@
     <Compile Include="TopKMaxNumbers.cs" />
     <Compile Include="Trie.cs" />
     <Compile Include="UnlockNum3X3Matrix.cs" />
+    <Compile Include="WordLadder.cs" />
     <Compile Include="ZeroEntireRowAndColumn.cs" />
+    <Compile Include="Zoo.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

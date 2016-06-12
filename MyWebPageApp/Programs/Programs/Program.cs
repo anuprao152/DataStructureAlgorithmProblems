@@ -483,7 +483,7 @@ namespace programs
 
             int startIndex = -1;
             //string res = revS.ReverseX("abcx",ref startIndex);
-            revS.ReverseX("abcxd", startIndex);
+            revS.ReverseX("abcxd", 0);
 
             //concordance problem
             Console.WriteLine("\n");
@@ -657,7 +657,62 @@ namespace programs
             rdu.RemoveDup("jdctndjmckp");
 
             rdu.RemoveDup("1.2AE.B/ab(231/.CB/A");
-           
+
+
+            ConnectedIsland island = new ConnectedIsland();
+            int Islands = island.FindNumberOfIsland(new int[][]{new int[] {1, 1, 0, 0, 0},
+                                                  new int[] {0, 1, 0, 0, 1},
+                                                  new int[] {1, 0, 0, 1, 1},
+                                                  new int[] {0, 0, 0, 0, 0},
+                                                  new int[] {1, 0, 1, 0, 1}
+                                                });
+            Console.WriteLine("\n"+Islands);
+
+
+
+            Set set = new Set();
+            Boolean isset = set.IsSet(new int[] { 1, 3, 5, 6, 8, 23, 45 });
+            isset = set.IsSet(new int[] { 1, 3, 5, 6, 8, 23,23, 45 });
+            
+            int?[] setr = set.MergeIntoSet(new int[] {1,3,8,9,},new int[]{2,4,6,8,9,10});
+
+            ShuffleLinkedList shufflell = new ShuffleLinkedList();
+            LinkedList sll = new LinkedList() { head = new node<int>(1) };
+            sll.Add(new node<int>(2));
+            sll.Add(new node<int>(3));
+            sll.Add(new node<int>(4));
+            sll.Add(new node<int>(5));
+            sll.Add(new node<int>(6));
+
+            shufflell.Shuffle(sll);
+
+            //Hashtable
+            HashTableLinearProbing hashtbl = new HashTableLinearProbing(5);
+            hashtbl.Put(1, "Anup");
+            hashtbl.Put(2, "Dhaval");
+            hashtbl.Put(3, "Hardik");
+            hashtbl.Put(4, "Vishal");
+            hashtbl.Put(1, "UpdateAnup");
+            hashtbl.Put(5, "Kiran");
+            hashtbl.Put(6, "Raina");
+            hashtbl.Put(7, "Sehwag");
+            hashtbl.Remove(4);
+
+            PhoneDictionary pd = new PhoneDictionary();
+            pd.printWords(new int[] { 2, 3, 4 }, 0, new char[3], 0);
+
+            NumberToWords ntw = new NumberToWords();
+            ntw.PrintNumberToWords(11);
+            ntw.PrintNumberToWords(110);
+            ntw.PrintNumberToWords(250);
+            ntw.PrintNumberToWords(9999);
+            ntw.PrintNumberToWords(999);
+            ntw.PrintNumberToWords(500);
+
+            Anagram anagram = new Anagram();
+            anagram.FindAnagram("abcde", "acbed");
+            anagram.FindAnagram("abacde", "acbedb");
+            anagram.FindAnagram("abaecdef", "afacbede");
 
             Console.Read();
         }
