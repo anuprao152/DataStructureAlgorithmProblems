@@ -5,65 +5,49 @@ using System.Text;
 
 namespace programs
 {
+    public class CelebrityProblem
+    {
+        //represent people know each other in Matrix form
 
-    class person
-    {
-        public int id;
-        public int[] knownPersonId;
-        public person(int id, int[] knownPersonId)
+        private Boolean IsKnow(int a, int b, int[][] PeopleKnowMatrix)
         {
-            this.id = id;
-            this.knownPersonId = knownPersonId;
-        }
-    }
-    class FindCelebrity
-    {
-        public person findCelebrity(List<person> candidatesforCelebrity)
-        {
-            List<person> p = GetCelebrityCandidatePeople(candidatesforCelebrity);
-            if (p.Count == 1)  return p[0];
-            else 
-                return findCelebrity(p);
+            if (PeopleKnowMatrix[a][b] == 1)
+                return true;
+
+            return false;
         }
 
-        public List<person> GetCelebrityCandidatePeople(List<person> candidatesforCelebrity)
+        //using two pointers
+        //if people[start] knows people[end], then people[start] must not be a celebrity
+        //else people[end] must not be a celebrity
+        // ------known-------|-------don't know (no celebrity)---
+
+        public int? findCelebrity(int[] people, int[][] PeopleKnowMatrix)
         {
-            List<person> newcandidates = new List<person>();
-            for (int i = 0; i < candidatesforCelebrity.Count; i++)
+            int start = 0;
+            int end = people.Length - 1;
+
+            while (start < end)
             {
-                for (int j = 0; j < candidatesforCelebrity.Count; j++)
+                if (IsKnow(people[start], people[end], PeopleKnowMatrix))
                 {
-                    if (IsKnow(candidatesforCelebrity[i], candidatesforCelebrity[j]))
-                    {
-                        //candidatesforCelebrity.Add(people[j]);
-                        newcandidates.Add(candidatesforCelebrity[j]);
-                    }
+                    start++;
                 }
-                return newcandidates;
+                else
+                {
+                    end--;
+                }
             }
 
-            return newcandidates;
-        }
+            //lets check if people[start] actually celebrity
 
-        public Boolean IsKnow(person a, person b)
-        {
-            Boolean know= false;
-           
-                for (int i = 0; i < a.knownPersonId.Length; i++)
-                {
-                    if (a.knownPersonId[i] == b.id)
-                    {
-                        know = true;
-                        return know;
-                        //break;
-                    }
-                }
+            for (int i = 0; i < people.Length; i++)
+            {
+                if (!IsKnow(people[i], people[start], PeopleKnowMatrix) && IsKnow(people[start], people[i], PeopleKnowMatrix))
+                    return null;
+            }
 
-                if (!know)
-                {
-                    return know;
-                }
-                return know;
+            return people[start];
         }
     }
 }

@@ -36,7 +36,7 @@ namespace programs
                     sb.Append("Ten");
                     number = 0; // terminate the loop
                 }
-
+                
                 if(number> 10 && number <20)
                 {
                     sb.Append(eleven_to_nineteen[number % 10]);
@@ -45,8 +45,8 @@ namespace programs
 
                 if ( number >= 20 && number <= 100)
                 {
-                    number = number % 10;
                     sb.Append(double_digits[number / 10]);
+                    number = number % 10;
                 }
 
                 if (number > 100 && number <= 999)

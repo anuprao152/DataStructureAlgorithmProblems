@@ -7,28 +7,26 @@ namespace programs
 {
     public class _2Sum
     {
-        public int[] arr = new int[5] { 1, 2, 3, 4, 5 };
-
-        public void SumK(int sum)
+        //Please look at programcreek solution
+        public void TwoSumK(int[] arr,int sum)
         {
             Dictionary<int,int> dict = new Dictionary<int,int>();
 
             for (int i = 0; i < arr.Length; i++)
             {
                 int value = sum - arr[i];
-                if (dict.ContainsValue(value))
+                if (dict.ContainsKey(arr[i]))
                 {
-                    Console.WriteLine("pair Exist");
+                    Console.Write("Sum Found: arr[{0}]: {1} + arr[{2}]: {3}", 
+                                    dict[arr[i]], arr[dict[arr[i]]], i, arr[i]);
+                    return;
                 }
                 else
                 {
-                    dict.Add(i, value);
+                    dict.Add(value, i);
                 }
-
             }
         }
-
-        //public void 3Sum(
 
     }
 }

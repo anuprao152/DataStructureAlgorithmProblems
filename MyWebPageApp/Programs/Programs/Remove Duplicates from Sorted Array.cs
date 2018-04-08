@@ -36,8 +36,7 @@ namespace programs
                 //if doesn't match then j++ and update element at j index
                 if (sorted[i] != sorted[j])
                 {
-                    j++;
-                    sorted[j] = sorted[i];
+                    sorted[++j] = sorted[i];
                 }
             }
 

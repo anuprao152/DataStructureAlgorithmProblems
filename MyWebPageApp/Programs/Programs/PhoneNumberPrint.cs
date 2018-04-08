@@ -60,16 +60,5 @@ namespace programs
 
             }
         }
-
-        //public int getValue(char c)
-        //{
-        //    for (int i = 0; i<letters.Length; i++)
-        //    {
-        //        if (letters[i] == c)
-        //        {
-
-        //        }
-        //    }
-        //}
     }
 }

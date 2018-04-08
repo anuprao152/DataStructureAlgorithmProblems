@@ -24,24 +24,21 @@ namespace programs
         {
             List<int> MaxsumSeq = new List<int>();
 
-            int prevsum = 0;
-            int maxsum = 0;//afte adding next element
+            int max = int.MinValue;
+            int sum = 0;//afte adding next element
 
             for (int i = 0; i < elements.Length; i++)
             {
-                maxsum += elements[i];//afte adding next element
+                sum += elements[i];//afte adding next element
 
-                if (prevsum < maxsum)
+                if (max < sum)
                 {
-                    //once you find that nw sequence that you generating has max sum take it as a new max sum 
-                    // and compare for a next sequence if you have a new window
-
-                    prevsum = maxsum;
+                    max = sum;
                 }
-                else if (maxsum < 0)
+                else if (sum < 0)
                 {
                     //if seqsum < 0 then start a new sequence from scratch
-                    maxsum = 0;
+                    sum = 0;
                 }
             }
         }

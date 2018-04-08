@@ -15,45 +15,24 @@ using System.Text;
 
 namespace programs
 {
-    public class Permutation
+    public class PermutationAlgo
     {
-        public string output;
-        public Boolean[] used;
-        public StringBuilder sb;
-
-        public Permutation() { }
-
-        public Permutation(string str)
+        public void Permutation(char[] str, int i, int len)
         {
-            used = new Boolean[str.Length];
-            sb = new StringBuilder();
-        }
-        //3 parameters
-        //str is string for which we find permutations
-        //i is starting index of the string
-        //n is ending index of the string
-        public void Findpermutation(char[] str, int i, int n)
-        {
-            if (i == n)
-                Console.WriteLine(str[i]);
-            else
+            if (i >= len - 1)
             {
-
-                //for each character in str we fix firs character
-                //and find permuation of the rest of the string
-                for (int j=i; j <= n; j++)
-                {
-                    //fix str[i] character by swaping with itself
-                    swap(ref str[i],ref str[j]);
-
-                    //char temp = str[i]; str[i] = str[j]; str[j] = temp;
-                    Findpermutation(str, i + 1, n);
-                    swap(ref str[i], ref str[j]); // backtrack
-                    //temp = str[i]; str[i] = str[j]; str[j] = temp;
-                    //recursive call for the rest string
-
-                }
+                Console.Out.WriteLine(str);
+                return;
             }
+ 
+            //you have len choice to swap current element a[i] with each a[j]
+            for (int j = i; j < len; j++)
+            {
+                swap(ref str[i], ref str[j]);
+                Permutation(str, i + 1, len);
+                swap(ref str[i], ref str[j]); // backtrack to origional string
+            }
+            
         }
         private void swap(ref char x, ref char y)
         {
@@ -99,6 +78,32 @@ namespace programs
                     permutationAlgo(newPrefix,newRest);// Permute( A, BCD)
                 }
             }
+        }
+
+        public List<string> PrintAllPermutations(int[] arr)
+        {
+            if (arr.Length == 1)
+            {
+                return new List<string> { arr[0].ToString() };
+            }
+
+            var list = arr.ToList();
+            var returnList = new List<string>();
+            for (var i = 0; i < arr.Length; ++i)
+            {
+                var number = arr[i];
+                list.RemoveAt(i);
+
+                var perms = PrintAllPermutations(list.ToArray());
+                foreach (var perm in perms)
+                {
+                    returnList.Add(number.ToString() + perm);
+                }
+
+                list.Insert(i, number);
+            }
+
+            return returnList;
         }
     }
 }

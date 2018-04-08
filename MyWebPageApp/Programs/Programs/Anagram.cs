@@ -23,7 +23,7 @@ namespace programs
             int[] countS1 = new int[numberOfChar];//dictionary  256
             int[] countS2 = new int[numberOfChar];
 
-            //both string characters should exist in both string with same count 
+            //both string characters should exist in both string with same count
             for (int i = 0; i < s1.Length ; i++)
             {
                 countS1[charS1[i]]++; // ascii value as a index

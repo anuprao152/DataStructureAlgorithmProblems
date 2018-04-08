@@ -12,13 +12,19 @@ namespace programs
         public WordLadder()
         {
             dict = new Dictionary<string, Boolean>(); // boolean represents visited or not, initially nothing is visited so false
+            //["hot","dot","dog","lot","log"]
+            dict.Add("hot", false);
+            dict.Add("dot", false);
+            dict.Add("dog", false);
+            dict.Add("lot", false);
+            dict.Add("log", false);
         }
 
         public void Transform(string src, string dest)
         {
             Queue<string> q = new Queue<string>();
             q.enqueue(src);
-            dict["src"] = true;// I visited this node.
+            dict[src] = true;// I visited this node.
 
             string temp= src;
             List<string> res = new List<string>();
@@ -32,12 +38,12 @@ namespace programs
                 //create a new word and check into dictionary and add into queue
                 for (int i = 0; i < word.Length; i++)
                 {
-                    for (int j = 0; i < 26; j++)
+                    for (int j = 'a'; j <= 'z'; j++)
                     {
                         //creat a new word by replacing character at ith position
                         string newWord = word.Substring(0, i) + word[j] + word.Substring(i + 1); //w may be a dest
 
-                        if (dict.ContainsKey(newWord) && dict["newWord"]==false)// newWord should not be visited, false means not visited before
+                        if (dict.ContainsKey(newWord) && dict[newWord]==false)// newWord should not be visited, false means not visited before
                         {
                             q.enqueue(newWord);
                             res.Add(newWord);

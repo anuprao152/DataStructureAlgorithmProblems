@@ -13,7 +13,7 @@ namespace ProblemsStore.Domain.Repository
     {
         private MyDBContext myDBContext = new MyDBContext();
         private ResumeRepository resumeRepository;
-        private GeneralRepository<Problems> problemRepository;
+        //private GeneralRepository<Problems> problemRepository;
 
         //Create the Repository only one time otherwise return reference of it.
         public ResumeRepository ResumeRepository

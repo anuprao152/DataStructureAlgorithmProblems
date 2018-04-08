@@ -43,9 +43,6 @@
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ProblemsStore.Domain">
-      <HintPath>..\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -235,6 +232,12 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Anup Rao.pubxml" />
     <Content Include="Views\Error\HttpError404.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProblemsStore.Domain\ProblemsStore.Domain.csproj">
+      <Project>{fdb7726c-0f06-4484-9be6-6ace3acbb2a2}</Project>
+      <Name>ProblemsStore.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
