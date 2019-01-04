@@ -7,7 +7,7 @@ namespace programs
 {
     public class WordLadder
     {
-        public Dictionary<string,Boolean> dict;
+        public Dictionary<string, Boolean> dict;
 
         public WordLadder()
         {
@@ -20,40 +20,51 @@ namespace programs
             dict.Add("log", false);
         }
 
-        public void Transform(string src, string dest)
+        public List<string> Transform(string src, string dest)
         {
             Queue<string> q = new Queue<string>();
             q.enqueue(src);
-            dict[src] = true;// I visited this node.
+            dict[src] = true;//visited
 
-            string temp= src;
-            List<string> res = new List<string>();
+            var res = new List<string>();
 
-            while (q.length!=0)
+            while (q.length != 0)
             {
                 string word = q.dequeue();
 
-                //if(word == dest) break;
+                if (word == dest)
+                    return res;
 
                 //create a new word and check into dictionary and add into queue
                 for (int i = 0; i < word.Length; i++)
                 {
-                    for (int j = 'a'; j <= 'z'; j++)
-                    {
-                        //creat a new word by replacing character at ith position
-                        string newWord = word.Substring(0, i) + word[j] + word.Substring(i + 1); //w may be a dest
+                    var wordArray = word.ToCharArray();
 
-                        if (dict.ContainsKey(newWord) && dict[newWord]==false)// newWord should not be visited, false means not visited before
+                    for (char c = 'a'; c <= 'z'; c++)
+                    {
+                        var temp = wordArray[i];
+
+                        if (wordArray[i] != c)
+                        {
+                            wordArray[i] = c;
+                        }
+
+                        var newWord = wordArray.ToString();
+
+                        if (dict.ContainsKey(newWord) && !dict[newWord])// newWord should not be visited (avoid loop)
                         {
                             q.enqueue(newWord);
+                            dict[newWord] = true;
                             res.Add(newWord);
-                            temp = newWord;
-                            break;
                         }
+
+                        wordArray[i] = temp;
                     }
-                    break;
-                } 
+
+                }
             }
+
+            return res;
         }
     }
 }
