@@ -61,24 +61,18 @@ namespace programs
                 }     
             }
 
-            if (i == set1.Length)
+            while (j < set2.Length)
             {
-                while (j < set2.Length)
-                {
-                    res[r] = set2[j];
-                    r++;
-                    j++;
-                }
+                res[r] = set2[j];
+                r++;
+                j++;
             }
-
-            if (j == set2.Length)
+            
+            while (i < set1.Length)
             {
-                while (i < set1.Length)
-                {
-                    res[r] = set1[i];
-                    r++;
-                    i++;
-                }
+                res[r] = set1[i];
+                r++;
+                i++;
             }
 
             return res;

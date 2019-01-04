@@ -7,7 +7,7 @@ namespace programs
 {
     public class WordLadder
     {
-        public Dictionary<string, Boolean> dict;
+        public Dictionary<string,Boolean> dict;
 
         public WordLadder()
         {
@@ -28,7 +28,7 @@ namespace programs
 
             var res = new List<string>();
 
-            while (q.length != 0)
+            while (q.length!=0)
             {
                 string word = q.dequeue();
 
@@ -60,8 +60,8 @@ namespace programs
 
                         wordArray[i] = temp;
                     }
-
-                }
+                    
+                } 
             }
 
             return res;
