@@ -12,3 +12,7 @@ C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\bin\Debug\B
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.dll
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.pdb
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\BlogLib.Contracts\bin\Debug\BlogLib.Contracts.dll
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\BlogLib.Contracts\bin\Debug\BlogLib.Contracts.pdb
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.dll
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\BlogLib.Contracts\obj\Debug\BlogLib.Contracts.pdb

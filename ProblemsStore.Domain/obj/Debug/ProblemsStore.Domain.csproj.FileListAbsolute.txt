@@ -30,3 +30,10 @@ C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\bin\Debu
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.csproj.CoreCompileInputs.cache
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.dll
 C:\Users\anupr\Downloads\MyWebPageApp\MyWebPageApp\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.pdb
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.dll.config
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.dll
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\bin\Debug\ProblemsStore.Domain.pdb
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.dll
+C:\Users\Anup Rao\Documents\DataStructureAlgorithmProblems\ProblemsStore.Domain\obj\Debug\ProblemsStore.Domain.pdb
