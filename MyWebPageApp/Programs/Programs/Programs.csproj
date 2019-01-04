@@ -94,6 +94,7 @@
     <Compile Include="Facebook\BinaryTreeVerticalOrder.cs" />
     <Compile Include="Facebook\DecodeDigits.cs" />
     <Compile Include="Facebook\NRCS.cs" />
+    <Compile Include="Facebook\StrobogrammaticNumber.cs" />
     <Compile Include="GenerateParantheses.cs" />
     <Compile Include="Graph\BFSAlgo.cs" />
     <Compile Include="BinarySearch\BinarySearch.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Interview\Zulily\UperLowerCasePermutation.cs" />
     <Compile Include="IPAddressValidation.cs" />
     <Compile Include="LinkedList\FlattenLinkedList.cs" />
+    <Compile Include="LRU.cs" />
     <Compile Include="MajorityElement.cs" />
     <Compile Include="MutliThreading\ProducerConsumerProb.cs" />
     <Compile Include="PrimeFactorsOfNum.cs" />

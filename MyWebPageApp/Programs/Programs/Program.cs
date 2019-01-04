@@ -11,6 +11,7 @@ using Programs.Interview.Zulily;
 using Programs.Interview.Vmware;
 using Programs.MutliThreading;
 using System.Threading;
+using Programs.Facebook;
 
 namespace programs
 {
@@ -391,8 +392,7 @@ namespace programs
             Console.WriteLine("Predecessor : {0}", Predecessor.data.ToString());
 
             //Phone Number Print 1-800-COM-CAST to 18002662278
-            PhoneNumberPrint phone = new PhoneNumberPrint();
-            phone.PhoneNumber("1-800-COM-CAST");
+           
 
 
             //Base Converter (binary or 0-9 base works)
@@ -895,6 +895,9 @@ namespace programs
 
             //}
 
+            var testmy = new test();
+           
+
             UperLowerCasePermutation ulcp = new UperLowerCasePermutation();
             ulcp.PermuteUpperLower("abc",new Boolean[3], 0);
 
@@ -957,6 +960,11 @@ namespace programs
             var gp = new GenerateParantheses();
             gp.GenerateCombinationParentheses(3, 3, 3, "");
 
+            var StrobogrammaticNumber = new StrobogrammaticNumber();
+           var resstrobog =  StrobogrammaticNumber.StroboGrammaticNumberPattern(4);
+           var resstrobog1 = StrobogrammaticNumber.StroboGrammaticNumberPattern(5);
+           var resstrobog2 = StrobogrammaticNumber.StroboGrammaticNumberPattern(6);
+
             AmazonSlidingWindowK aswk = new AmazonSlidingWindowK();
             aswk.subStringsKDist("wawaglknagagwunagkwkwagl", 4);
             aswk.subStringsKDist("democracy", 5);
@@ -966,6 +974,9 @@ namespace programs
             pscnca.LengthEachScene(new List<char> { 'z','z','c','b','z','c','h','f','i','h','i' }, new List<int>(), 0);
 
             // pscnca.LengthEachScene(new List<char> { 'a', 'b', 'c', 'd', 'a', 'e', 'f', 'g', 'h', 'i', 'j', 'e' });
+
+
+
 
             Console.Read();
         }
