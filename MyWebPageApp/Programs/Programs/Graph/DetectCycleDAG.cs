@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Programs
+namespace Programs.Graph
 {
     //https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
     public class DetectCycleDAG
