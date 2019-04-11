@@ -22,7 +22,7 @@ namespace Programs.Facebook
             if (num <= 3)
                 return num;
 
-            int min = int.MaxValue;
+            int min = num;
             for (int i = 1; i * i <= num; i++) // choices 1,4,9,etc
             {
                 var square = i * i;
