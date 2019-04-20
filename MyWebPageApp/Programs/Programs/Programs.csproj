@@ -76,6 +76,8 @@
     <Compile Include="Amazon\GraphProb.cs" />
     <Compile Include="Amazon\MedianInStreamOfIntegersProg.cs" />
     <Compile Include="Amazon\NumberOfKsBetween0toNProg.cs" />
+    <Compile Include="Amazon\OnlineTest\Test1.cs" />
+    <Compile Include="Amazon\OnlineTest\Test2.cs" />
     <Compile Include="Amazon\PartitionSequenceNoCharacterAppear.cs" />
     <Compile Include="Amazon\StronglyConnectedWeaklyConnected.cs" />
     <Compile Include="Amazon\TopologicalSortig.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Facebook\ValidNumber.cs" />
     <Compile Include="Facebook\WeightedJobScheduling.cs" />
     <Compile Include="GenerateParantheses.cs" />
+    <Compile Include="Google\EvaluateExpressionTarget.cs" />
     <Compile Include="Graph\BFSAlgo.cs" />
     <Compile Include="BinarySearch\BinarySearch.cs" />
     <Compile Include="BinaryTree\BinaryTree.cs" />
