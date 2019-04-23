@@ -100,6 +100,7 @@
     <Compile Include="Facebook\FindAllAnagramInString.cs" />
     <Compile Include="Facebook\FlattenNestedListIterator.cs" />
     <Compile Include="Facebook\InsertInterval.cs" />
+    <Compile Include="Facebook\JumpGame.cs" />
     <Compile Include="Facebook\LargestRectangleHistorgram.cs" />
     <Compile Include="Facebook\LongestConsecutiveSeq.cs" />
     <Compile Include="Facebook\MaximalRectangle.cs" />
