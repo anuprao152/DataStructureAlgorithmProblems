@@ -152,6 +152,7 @@
     <Compile Include="LRU.cs" />
     <Compile Include="MajorityElement.cs" />
     <Compile Include="MedianInStream.cs" />
+    <Compile Include="MergeKSortedArrays.cs" />
     <Compile Include="MutliThreading\ProducerConsumerProb.cs" />
     <Compile Include="PrimeFactorsOfNum.cs" />
     <Compile Include="Recursion\BoggleGame.cs" />
