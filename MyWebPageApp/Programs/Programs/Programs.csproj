@@ -73,6 +73,7 @@
     <Compile Include="AmazonSponsorshipChain.cs" />
     <Compile Include="Amazon\AmazonSlidingWindowK.cs" />
     <Compile Include="Amazon\DeletionDistance.cs" />
+    <Compile Include="Amazon\GeeksForGeeks\MaximumSumLengthsNonOverlappingSubarraysKMaxElement.cs" />
     <Compile Include="Amazon\GraphProb.cs" />
     <Compile Include="Amazon\MedianInStreamOfIntegersProg.cs" />
     <Compile Include="Amazon\NumberOfKsBetween0toNProg.cs" />
@@ -86,8 +87,14 @@
     <Compile Include="Array\TwoSumCloseToTarget.cs" />
     <Compile Include="BinaryTree\ConnectSiblingBinaryTree.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalLineByLine.cs" />
+    <Compile Include="BinaryTree\LevelOrderTraversalReverse.cs" />
     <Compile Include="BinaryTree\ZigZagOrderTraversal.cs" />
     <Compile Include="BinaryTree\SortedArrayToBSTProg.cs" />
+    <Compile Include="BitManipulation\CountSetBits.cs" />
+    <Compile Include="BitManipulation\GrayCode.cs" />
+    <Compile Include="BitManipulation\IntegerPalindrom.cs" />
+    <Compile Include="BitManipulation\NumPowerOf2OrNot.cs" />
+    <Compile Include="BitManipulation\SingleNumber.cs" />
     <Compile Include="CountInversion.cs" />
     <Compile Include="DesignPatterns\ObserverPattern.cs" />
     <Compile Include="Dynamic Programming\LIS.cs" />
@@ -110,6 +117,7 @@
     <Compile Include="Facebook\PaintHouse.cs" />
     <Compile Include="Facebook\PalindromPair.cs" />
     <Compile Include="Facebook\PerfectSquare.cs" />
+    <Compile Include="Facebook\ProductOfArrayExceptSelf.cs" />
     <Compile Include="Facebook\SkylineProblem.cs" />
     <Compile Include="Facebook\SmallestStringContainingAllChars.cs" />
     <Compile Include="Facebook\StrobogrammaticNumber.cs" />
@@ -120,6 +128,7 @@
     <Compile Include="Facebook\WeightedJobScheduling.cs" />
     <Compile Include="GenerateParantheses.cs" />
     <Compile Include="Google\EvaluateExpressionTarget.cs" />
+    <Compile Include="Google\MaxProductSubArray.cs" />
     <Compile Include="Graph\BFSAlgo.cs" />
     <Compile Include="BinarySearch\BinarySearch.cs" />
     <Compile Include="BinaryTree\BinaryTree.cs" />

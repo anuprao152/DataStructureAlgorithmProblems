@@ -975,7 +975,21 @@ namespace programs
 
             // pscnca.LengthEachScene(new List<char> { 'a', 'b', 'c', 'd', 'a', 'e', 'f', 'g', 'h', 'i', 'j', 'e' });
 
+            Programs.Google.MaxProductSubArray mpsa = new Programs.Google.MaxProductSubArray();
+            mpsa.MaxProductSubArrayFunc(new int[] { 2, 3, -4, 5, -3, -5 });
 
+
+            var intPalindrom = new Programs.BitManipulation.IntegerPalindrom();
+            //intPalindrom.IsIntPalindrom(9);
+
+            intPalindrom.reverseBits(9);
+
+            var numpower2 = new Programs.BitManipulation.NumPowerOf2OrNot();
+            numpower2.isNumPower2(8);
+            numpower2.isNumPower2(10);
+
+            var graycode = new Programs.BitManipulation.GrayCode();
+            var graycodeRes = graycode.GrayCodeFunc(4);
 
 
             Console.Read();

@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Programs.Facebook
 {
-    // Amazon and Facebook
-    class LongestConsecutiveSeq
+    // product array puzzle
+    public class ProductOfArrayExceptSelf
     {
     }
 }

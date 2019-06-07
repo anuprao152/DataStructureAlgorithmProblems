@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Programs.Facebook
+namespace Programs
 {
-    // Amazon and Facebook
-    class LongestConsecutiveSeq
+    class MedianInStream
     {
     }
 }

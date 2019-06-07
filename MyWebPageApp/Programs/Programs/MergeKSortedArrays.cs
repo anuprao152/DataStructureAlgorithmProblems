@@ -27,10 +27,22 @@ namespace Programs
 
     public class PriorityQueue
     {
-        public ArrayContainer GetMin();
-        public void Extract();
-        public void Add(ArrayContainer o);
-        public bool IsEmpty();
+        public ArrayContainer GetMin()
+        {
+            throw new NotImplementedException();
+        }
+        public void Extract()
+        {
+            throw new NotImplementedException();
+        }
+        public void Add(ArrayContainer o)
+        {
+            throw new NotImplementedException();
+        }
+        public bool IsEmpty()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     //https://www.programcreek.com/2014/05/merge-k-sorted-arrays-in-java/
