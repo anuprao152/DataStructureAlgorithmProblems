@@ -27,18 +27,28 @@ namespace programs
                 Console.WriteLine(root.data);
                 printleftEdge(root.left);
             }
+            else if(root.right!=null)
+            {
+                Console.WriteLine(root.data);
+                printleftEdge(root.right);
+            }
         }
 
         //traverse right only
         public void printrightEdge(Bnode<int> root)
         {
             if (root == null) return;
-            //this codition doesn't print the leaf node
+            
             if (root.right != null)
             {
-                Console.WriteLine(root.data);
+                printrightEdge(root.right);
+                Console.WriteLine(root.data); //print on backtrack
             }
-            printrightEdge(root.right);
+            else if (root.left != null)
+            {
+                printrightEdge(root.left);
+                Console.WriteLine(root.data); // print on backtrack
+            }
         }
 
         //To print leaf node is simply a in-order traversal
