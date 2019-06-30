@@ -7,9 +7,9 @@ namespace programs
 {
     public class BinaryTreeVerticalOrder
     {
-        public void printTreeVertically(bnode<int> root)
+        public void printTreeVertically(Bnode<int> root)
         {
-            var dict = new Dictionary<int,List<bnode<int>>>();
+            var dict = new Dictionary<int,List<Bnode<int>>>();
             GetVerticalOrder(root, 0, dict);
 
             var min = int.MaxValue;
@@ -41,7 +41,7 @@ namespace programs
 
         }
 
-        public void  GetVerticalOrder(bnode<int> cur, int hd, Dictionary<int,List<bnode<int>>> dict)
+        public void  GetVerticalOrder(Bnode<int> cur, int hd, Dictionary<int,List<Bnode<int>>> dict)
         {
             if (cur == null)
                 return;
@@ -49,7 +49,7 @@ namespace programs
             // add horizontal distace in dict as a key and node as value,
             if (!dict.ContainsKey(hd))
             {
-                var list = new List<bnode<int>>();
+                var list = new List<Bnode<int>>();
                 list.Add(cur);
                 dict.Add(hd, list);
             }

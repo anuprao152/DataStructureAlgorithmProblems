@@ -9,9 +9,9 @@ namespace Programs.Facebook
     //http://qa.geeksforgeeks.org/3996/qa.geeksforgeeks.org/3996/implement-an-iterator-over-a-binary-search-tree-bst.html
     public class BSTIterator
     {
-        private Stack<bnode<int>> stack = new Stack<bnode<int>>();
+        private Stack<Bnode<int>> stack = new Stack<Bnode<int>>();
 
-        public BSTIterator(bnode<int> root)
+        public BSTIterator(Bnode<int> root)
         {
             PushAll(root);
         }
@@ -21,7 +21,7 @@ namespace Programs.Facebook
             return (stack.Count > 0);// if stack empty return false
         }
 
-        public bnode<int> Next()
+        public Bnode<int> Next()
         {
             var node = stack.Pop();
 
@@ -33,7 +33,7 @@ namespace Programs.Facebook
             return node;
         }
 
-        private void PushAll(bnode<int> node)
+        private void PushAll(Bnode<int> node)
         {
             while(node!=null)
             {

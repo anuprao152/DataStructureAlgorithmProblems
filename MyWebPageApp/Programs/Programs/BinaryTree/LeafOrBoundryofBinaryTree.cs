@@ -10,7 +10,7 @@ namespace programs
 
         //print outermost edge of a Binary Tree
         //root is printing 2 times for left edge and for right edge
-        public void printouterMostEdge(bnode<int> root)
+        public void printouterMostEdge(Bnode<int> root)
         {
             printleftEdge(root);
             printleafnodes(root);
@@ -18,7 +18,7 @@ namespace programs
         }
 
         //traverse left only 
-        public void printleftEdge(bnode<int> root)
+        public void printleftEdge(Bnode<int> root)
         {
             if (root == null) return;
             //this codition doesn't print the leaf node
@@ -30,7 +30,7 @@ namespace programs
         }
 
         //traverse right only
-        public void printrightEdge(bnode<int> root)
+        public void printrightEdge(Bnode<int> root)
         {
             if (root == null) return;
             //this codition doesn't print the leaf node
@@ -43,7 +43,7 @@ namespace programs
 
         //To print leaf node is simply a in-order traversal
         //but print the visit node which has left and right node=null 
-        public void printleafnodes(bnode<int> root)
+        public void printleafnodes(Bnode<int> root)
         {
             if (root == null) return;
             printleafnodes(root.left);

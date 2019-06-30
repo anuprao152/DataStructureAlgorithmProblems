@@ -11,9 +11,9 @@ namespace programs
         public static int i = 0;
 
         //Do in order traversal and print kth element by checking condition
-        public void inorder(bnode<int> root)
+        public void inorder(Bnode<int> root)
         {
-            bnode<int> cur = root;
+            Bnode<int> cur = root;
             if (cur == null) return;
 
             

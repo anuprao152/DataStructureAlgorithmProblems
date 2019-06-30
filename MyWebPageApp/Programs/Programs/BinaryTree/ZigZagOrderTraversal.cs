@@ -9,10 +9,10 @@ namespace Programs.BinaryTree
 {
     public class ZigZagOrderTraversal
     {
-        public void PrintZigZag(bnode<int> root)
+        public void PrintZigZag(Bnode<int> root)
         {
-            var s1 = new Stack<bnode<int>>();
-            var s2 = new Stack<bnode<int>>();
+            var s1 = new Stack<Bnode<int>>();
+            var s2 = new Stack<Bnode<int>>();
 
             s1.Push(root);
 

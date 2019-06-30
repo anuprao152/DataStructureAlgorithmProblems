@@ -5,13 +5,13 @@ using System.Text;
 
 namespace programs
 {
-    public class bnode<T>
+    public class Bnode<T>
     {
         public T data;
-        public bnode<int> left;
-        public bnode<int> right;
+        public Bnode<int> left;
+        public Bnode<int> right;
 
-        public bnode(T data)
+        public Bnode(T data)
         {
             this.data = data;
         }
@@ -19,9 +19,9 @@ namespace programs
 
     class BinaryTree
     {
-        public bnode<int> root;
+        public Bnode<int> root;
 
-        public void insert(bnode<int> node)
+        public void insert(Bnode<int> node)
         {
             if (root == null)
             {
@@ -55,9 +55,9 @@ namespace programs
         }
 
         //Depth First Search (goes deeper and deeper till encounter null)
-        public void inorderTraverse(bnode<int> anode)
+        public void inorderTraverse(Bnode<int> anode)
         {
-            bnode<int> cur = anode;
+            Bnode<int> cur = anode;
             if (cur.left != null)
             {
                 inorderTraverse(cur.left);
@@ -71,7 +71,7 @@ namespace programs
             }
         }
 
-        public bnode<int> findCommonAncestor(bnode<int> root,bnode<int> p, bnode<int> q)
+        public Bnode<int> findCommonAncestor(Bnode<int> root,Bnode<int> p, Bnode<int> q)
         {
             if (root == null) return null;
             // p and q is left of the root 
@@ -90,7 +90,7 @@ namespace programs
         }
 
         // print height of the tree
-        public int findHeight(bnode<int> root)
+        public int findHeight(Bnode<int> root)
         {
             if (root == null) return 0;
             
@@ -103,9 +103,9 @@ namespace programs
         //Breadth First search is a level-order binary tree traversal 
         //(linked list n- connection problem solution)
         // And remeber that BFS use Queue data structure
-        public void printOrderLevelBtree(bnode<int> root)
+        public void printOrderLevelBtree(Bnode<int> root)
         {
-            Queue<bnode<int>> q = new Queue<bnode<int>>();
+            Queue<Bnode<int>> q = new Queue<Bnode<int>>();
 
             if (root == null) return;
             else
@@ -113,7 +113,7 @@ namespace programs
             while ( true) // there should be a terminate condition like queue should be empty but 
                           //I terminated when dequeue operation is null no 
             {             // no node need have adjanct right and left vertex to visit now.  
-                bnode<int> node = q.dequeue();
+                Bnode<int> node = q.dequeue();
                 if (node != null) Console.WriteLine(node.data);
                 else return;
                 if(node.right !=null) q.enqueue(node.right);
@@ -121,13 +121,13 @@ namespace programs
             }
         }
 
-        public static bnode<int> ConstructBinaryTree(List<int> preOrder, List<int> inOrder)
+        public static Bnode<int> ConstructBinaryTree(List<int> preOrder, List<int> inOrder)
         {
-            bnode<int> root = null;
+            Bnode<int> root = null;
              
              if (preOrder.Count != 0 && inOrder.Count != 0)
              {
-                 root = new bnode<int>(preOrder[0]);
+                 root = new Bnode<int>(preOrder[0]);
                  int rootIdx = inOrder.IndexOf(root.data);
                  //Left & Right SubTree inOrder
                  List<int> leftSubTreeIn = inOrder.GetRange(0, rootIdx);
@@ -166,7 +166,7 @@ namespace programs
         //if key value is grater that maxium value in BST than return null
 
        
-        public int FindCeiling(bnode<int> root, int key)
+        public int FindCeiling(Bnode<int> root, int key)
         {
             if (root == null ) return -1;
 

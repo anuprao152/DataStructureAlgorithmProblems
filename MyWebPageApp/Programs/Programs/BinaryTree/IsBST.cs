@@ -11,8 +11,8 @@ namespace programs
     /// </summary>
     public class IsBST
     {
-        public static bnode<int> prev=null;
-        public  Boolean IsBinarySearchTree(bnode<int> root)
+        public static Bnode<int> prev=null;
+        public  Boolean IsBinarySearchTree(Bnode<int> root)
         {
             if (root == null) 
                 return false;

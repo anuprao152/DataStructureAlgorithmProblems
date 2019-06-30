@@ -19,14 +19,14 @@ namespace programs
         /// <param name="node1"></param>
         /// <param name="node2"></param>
         /// <returns></returns>
-        public bnode<int> FindLCA(bnode<int> root, bnode<int> node1, bnode<int> node2)
+        public Bnode<int> FindLCA(Bnode<int> root, Bnode<int> node1, Bnode<int> node2)
         {
             if (root == null) return null;
             if (root.data == node1.data || root.data == node2.data) return root; //
 
             //in-order traversal returns when null or found a either node1 or node2
-            bnode<int> left = FindLCA(root.left, node1, node2);
-            bnode<int> right = FindLCA(root.right, node1, node2);
+            Bnode<int> left = FindLCA(root.left, node1, node2);
+            Bnode<int> right = FindLCA(root.right, node1, node2);
 
             //if you found node1 and node 2 opposite side (left and right return root)
             if(left!=null && right!=null) return root;
@@ -53,7 +53,7 @@ namespace programs
         /// <param name="p"></param>
         /// <param name="q"></param>
         /// <returns></returns>
-        public bnode<int> findCommonAncestor(bnode<int> root, bnode<int> p, bnode<int> q)
+        public Bnode<int> findCommonAncestor(Bnode<int> root, Bnode<int> p, Bnode<int> q)
         {
             if (root == null) return null;
             // p and q is left of the root 

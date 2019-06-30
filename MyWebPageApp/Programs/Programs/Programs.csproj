@@ -88,6 +88,7 @@
     <Compile Include="BinaryTree\ConnectSiblingBinaryTree.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalLineByLine.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalReverse.cs" />
+    <Compile Include="BinaryTree\NextRightNode.cs" />
     <Compile Include="BinaryTree\ZigZagOrderTraversal.cs" />
     <Compile Include="BinaryTree\SortedArrayToBSTProg.cs" />
     <Compile Include="BitManipulation\CountSetBits.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Dynamic Programming\LIS.cs" />
     <Compile Include="Dynamic Programming\robber.cs" />
     <Compile Include="Easy\balancedparentheses.cs" />
+    <Compile Include="Facebook\AnagramSubstringSearch.cs" />
     <Compile Include="Facebook\ArithmeticSlices.cs" />
     <Compile Include="Facebook\BinaryTreeVerticalOrder.cs" />
     <Compile Include="Facebook\BSTIterator.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Facebook\LongestConsecutiveSeq.cs" />
     <Compile Include="Facebook\MaximalRectangle.cs" />
     <Compile Include="Facebook\MergeKLists.cs" />
+    <Compile Include="Facebook\MergeTwoSortedIntervals.cs" />
     <Compile Include="Facebook\NextPermutation.cs" />
     <Compile Include="Facebook\NRCS.cs" />
     <Compile Include="Facebook\PaintHouse.cs" />
@@ -121,6 +124,7 @@
     <Compile Include="Facebook\SkylineProblem.cs" />
     <Compile Include="Facebook\SmallestStringContainingAllChars.cs" />
     <Compile Include="Facebook\StrobogrammaticNumber.cs" />
+    <Compile Include="Facebook\SubstringAtleastKRepeatingChars.cs" />
     <Compile Include="Facebook\TaskScheduler.cs" />
     <Compile Include="Facebook\TernaryExpressionToBinaryTree.cs" />
     <Compile Include="Facebook\TinyUrl.cs" />

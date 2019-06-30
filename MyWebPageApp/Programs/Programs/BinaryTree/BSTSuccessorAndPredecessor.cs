@@ -9,7 +9,7 @@ namespace programs
     {
         //Minimum value always deep left side of the tree
         // you can do this prog using while loop
-        public bnode<int> Min(bnode<int> root)
+        public Bnode<int> Min(Bnode<int> root)
         {
             if (root.left != null)
                 Min(root.left);
@@ -18,7 +18,7 @@ namespace programs
 
          //Minimum value always deep right side of the tree
         // you can do this prog using while loop
-        public bnode<int> Max(bnode<int> root)
+        public Bnode<int> Max(Bnode<int> root)
         {
             if (root.right != null)
               Max(root.right);
@@ -39,14 +39,14 @@ namespace programs
         /// <param name="root">Tree</param>
         /// <param name="x">X node for which we find Successor</param>
         /// <returns></returns>
-        public bnode<int> InOrderSuccesor(bnode<int> root, bnode<int> x)
+        public Bnode<int> InOrderSuccesor(Bnode<int> root, Bnode<int> x)
         {
             //If right sub tree exist from node x node,
             //then find minimum value in right sub tree which is succ
             if (x.right != null) 
                 return Min(x.right);
             
-            bnode<int> suc = null;
+            Bnode<int> suc = null;
             //If right tree doens't exist, do the following
             while (root != null)
             {
@@ -80,11 +80,11 @@ namespace programs
         /// <param name="root"></param>
         /// <param name="x">X node for which we find Predecessor</param>
         /// <returns></returns>
-        public bnode<int> InOrderPredecessor(bnode<int> root, bnode<int> x)
+        public Bnode<int> InOrderPredecessor(Bnode<int> root, Bnode<int> x)
         {
             if (x.left != null) return Max(x.left);
 
-            bnode<int> pred = null;
+            Bnode<int> pred = null;
             while (root != null)
             {
                 if (x.data < root.data)

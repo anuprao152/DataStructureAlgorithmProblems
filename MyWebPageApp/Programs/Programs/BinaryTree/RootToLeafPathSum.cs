@@ -7,7 +7,7 @@ namespace programs
 {
     public class RootToLeafPathSum
     {
-        public Boolean FindSumPath(bnode<int> curNode, int sum)
+        public Boolean FindSumPath(Bnode<int> curNode, int sum)
         {
 
         //every time we substract current node with sum value

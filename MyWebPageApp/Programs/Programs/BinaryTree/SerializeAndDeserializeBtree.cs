@@ -23,7 +23,7 @@ namespace programs
 
     public class SerializeAndDeserializeBtree
     {
-        public void Serialize(bnode<int> root)
+        public void Serialize(Bnode<int> root)
         {
             if (root == null)
             {

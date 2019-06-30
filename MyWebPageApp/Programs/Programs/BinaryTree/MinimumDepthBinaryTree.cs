@@ -8,7 +8,7 @@ namespace programs
     public class MinimumDepthBinaryTree
     {
         public static int depth = 0;
-        public int MinDepthBinaryTree(bnode<int> root)
+        public int MinDepthBinaryTree(Bnode<int> root)
         {
             //base 
             if (root == null) return depth;

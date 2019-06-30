@@ -15,7 +15,7 @@ namespace programs
         // 
 
 
-        public Boolean FindSubTree(bnode<int> Tree1, bnode<int> Tree2)
+        public Boolean FindSubTree(Bnode<int> Tree1, Bnode<int> Tree2)
         {
             //When traversing through Tree1 you never return with 
             if (Tree1 == null) return false;
@@ -30,7 +30,7 @@ namespace programs
             return (FindSubTree(Tree1.left, Tree2) || FindSubTree(Tree1.right, Tree2));
         }
 
-        public Boolean IsIdentical(bnode<int> Tree1, bnode<int> Tree2)
+        public Boolean IsIdentical(Bnode<int> Tree1, Bnode<int> Tree2)
         {
             //base case both null or terminate condition
             if (Tree1 == null && Tree2 == null) return true;

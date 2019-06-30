@@ -102,19 +102,19 @@ namespace programs
             //                           10
 
             BinaryTree btree = new BinaryTree();
-            btree.insert(new bnode<int>(6));
-            btree.insert(new bnode<int>(11));
-            btree.insert(new bnode<int>(8));
-            btree.insert(new bnode<int>(12));
-            btree.insert(new bnode<int>(2));
-            btree.insert(new bnode<int>(1));
-            btree.insert(new bnode<int>(4));
-            btree.insert(new bnode<int>(13));
-            btree.insert(new bnode<int>(5));
-            btree.insert(new bnode<int>(3));
-            btree.insert(new bnode<int>(7));
-            btree.insert(new bnode<int>(9));
-            btree.insert(new bnode<int>(10));
+            btree.insert(new Bnode<int>(6));
+            btree.insert(new Bnode<int>(11));
+            btree.insert(new Bnode<int>(8));
+            btree.insert(new Bnode<int>(12));
+            btree.insert(new Bnode<int>(2));
+            btree.insert(new Bnode<int>(1));
+            btree.insert(new Bnode<int>(4));
+            btree.insert(new Bnode<int>(13));
+            btree.insert(new Bnode<int>(5));
+            btree.insert(new Bnode<int>(3));
+            btree.insert(new Bnode<int>(7));
+            btree.insert(new Bnode<int>(9));
+            btree.insert(new Bnode<int>(10));
 
 
 
@@ -176,13 +176,13 @@ namespace programs
             binaryTree.printouterMostEdge(btree.root);
             
             //Print lowest common Ancestor in Binary Search Tree
-            bnode<int> LCA = btree.findCommonAncestor(btree.root, new bnode<int>(13), new bnode<int>(10));
+            Bnode<int> LCA = btree.findCommonAncestor(btree.root, new Bnode<int>(13), new Bnode<int>(10));
             Console.WriteLine("Print lowest common Ancestor in Binary Search Tree:" + LCA.data);
             int height = btree.findHeight(btree.root);
 
             //print lowest common Ancestor in Binary Tree
             LowestCommonAncesstorBinaryTree blca = new LowestCommonAncesstorBinaryTree();
-            LCA = blca.FindLCA(btree.root, new bnode<int>(13), new bnode<int>(10));
+            LCA = blca.FindLCA(btree.root, new Bnode<int>(13), new Bnode<int>(10));
             Console.WriteLine("Print lowest common Ancestor in Binary Tree:" + LCA.data);
            
             //print out order level Btree
@@ -192,20 +192,20 @@ namespace programs
             //Construct a binary tree
             List<int> preOrder = new List<int>() { 1, 2, 4, 8, 9, 10, 11, 5, 3, 6, 7 };
             List<int> InOrder = new List<int>() { 8, 4, 10, 9, 11, 2, 5, 1,6,3,7 };
-            bnode<int> root1 = BinaryTree.ConstructBinaryTree(preOrder, InOrder);
+            Bnode<int> root1 = BinaryTree.ConstructBinaryTree(preOrder, InOrder);
 
             Console.WriteLine("BTree Construction test by InOrder Traversal");
             btree.inorderTraverse(root1);
 
             //Find Ceiling Value form BST
             BinaryTree btree2 = new BinaryTree();
-            btree2.insert(new bnode<int>(8));
-            btree2.insert(new bnode<int>(4));
-            btree2.insert(new bnode<int>(12));
-            btree2.insert(new bnode<int>(2));
-            btree2.insert(new bnode<int>(6));
-            btree2.insert(new bnode<int>(10));
-            btree2.insert(new bnode<int>(14));
+            btree2.insert(new Bnode<int>(8));
+            btree2.insert(new Bnode<int>(4));
+            btree2.insert(new Bnode<int>(12));
+            btree2.insert(new Bnode<int>(2));
+            btree2.insert(new Bnode<int>(6));
+            btree2.insert(new Bnode<int>(10));
+            btree2.insert(new Bnode<int>(14));
             int ceil = btree2.FindCeiling(btree2.root,1);
 
             //btree2.BSTwithNeighbourPointers(btree2.root);
@@ -370,25 +370,25 @@ namespace programs
             //------------ Successor and Predessor -------------//
 
             BinaryTree BSuc = new BinaryTree();
-            BSuc.insert(new bnode<int>(18));
-            BSuc.insert(new bnode<int>(20));
-            BSuc.insert(new bnode<int>(14));
-            BSuc.insert(new bnode<int>(24));
-            BSuc.insert(new bnode<int>(19));
-            BSuc.insert(new bnode<int>(25));
-            BSuc.insert(new bnode<int>(23));
-            BSuc.insert(new bnode<int>(22));
-            BSuc.insert(new bnode<int>(21));
-            BSuc.insert(new bnode<int>(16));
-            BSuc.insert(new bnode<int>(17));
-            BSuc.insert(new bnode<int>(15));
-            BSuc.insert(new bnode<int>(13));
+            BSuc.insert(new Bnode<int>(18));
+            BSuc.insert(new Bnode<int>(20));
+            BSuc.insert(new Bnode<int>(14));
+            BSuc.insert(new Bnode<int>(24));
+            BSuc.insert(new Bnode<int>(19));
+            BSuc.insert(new Bnode<int>(25));
+            BSuc.insert(new Bnode<int>(23));
+            BSuc.insert(new Bnode<int>(22));
+            BSuc.insert(new Bnode<int>(21));
+            BSuc.insert(new Bnode<int>(16));
+            BSuc.insert(new Bnode<int>(17));
+            BSuc.insert(new Bnode<int>(15));
+            BSuc.insert(new Bnode<int>(13));
 
             BSTSuccessorAndPredecessor suc = new BSTSuccessorAndPredecessor();
-            bnode<int> Successor =  suc.InOrderSuccesor(BSuc.root, new bnode<int>(22));
+            Bnode<int> Successor =  suc.InOrderSuccesor(BSuc.root, new Bnode<int>(22));
             Console.WriteLine("Successor : {0}", Successor.data.ToString());
 
-            bnode<int> Predecessor = suc.InOrderPredecessor(BSuc.root, BSuc.root.left); //14
+            Bnode<int> Predecessor = suc.InOrderPredecessor(BSuc.root, BSuc.root.left); //14
             Console.WriteLine("Predecessor : {0}", Predecessor.data.ToString());
 
             //Phone Number Print 1-800-COM-CAST to 18002662278
@@ -583,13 +583,13 @@ namespace programs
 
             BinaryTree r2fsumTree = new BinaryTree();
 
-            r2fsumTree.insert(new bnode<int>(6));
-            r2fsumTree.insert(new bnode<int>(11));
-            r2fsumTree.insert(new bnode<int>(2));
-            r2fsumTree.insert(new bnode<int>(4));
-            r2fsumTree.insert(new bnode<int>(5));
-            r2fsumTree.insert(new bnode<int>(1));
-            r2fsumTree.insert(new bnode<int>(3));
+            r2fsumTree.insert(new Bnode<int>(6));
+            r2fsumTree.insert(new Bnode<int>(11));
+            r2fsumTree.insert(new Bnode<int>(2));
+            r2fsumTree.insert(new Bnode<int>(4));
+            r2fsumTree.insert(new Bnode<int>(5));
+            r2fsumTree.insert(new Bnode<int>(1));
+            r2fsumTree.insert(new Bnode<int>(3));
 
             Boolean br2f = r2l.FindSumPath(r2fsumTree.root, 17);
 
@@ -991,6 +991,11 @@ namespace programs
             var graycode = new Programs.BitManipulation.GrayCode();
             var graycodeRes = graycode.GrayCodeFunc(4);
 
+
+            var MinSpaceWordBreak = new WordBreakProblem();
+            var ansSpace = MinSpaceWordBreak.MinSpaceWordBreak("ILikeFaceBookiceCream",0, new Dictionary<string,string> {{"ice","ice"},{"Cream","Cream"},{"iceCream","IceCream"},{"I","I"},{"Like", "Like"}, {"Face","Face"},{"Book","Book"},{"FaceBook","FaceBook"}});
+
+            Console.WriteLine(ansSpace);
 
             Console.Read();
         }

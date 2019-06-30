@@ -17,7 +17,7 @@ namespace programs
         // rightheight = get the height of the right subtree
         // if leftheight - rightheigh <=1 ( not more than 1) declare balanced
 
-        public Boolean Isbalanced(bnode<int> root)
+        public Boolean Isbalanced(Bnode<int> root)
         {
             //base case
 
@@ -36,7 +36,7 @@ namespace programs
 
         }
 
-        public int Height(bnode<int> root)
+        public int Height(Bnode<int> root)
         {
             if (root == null) return 0;
 

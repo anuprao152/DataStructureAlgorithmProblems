@@ -9,7 +9,7 @@ namespace programs
     //Amazon Interview Question
     public class SortedArrayToBSTProg
     {
-        public bnode<int> SortedArrayToBST(int[] array, int start, int end)
+        public Bnode<int> SortedArrayToBST(int[] array, int start, int end)
         {
            //base case
             if (start > end)
@@ -17,7 +17,7 @@ namespace programs
 
             int mid = (start + end) / 2;
              
-            bnode<int> node = new bnode<int>(array[mid]);
+            Bnode<int> node = new Bnode<int>(array[mid]);
 
             //recursivly construct left subtree
             node.left= SortedArrayToBST(array, start, mid - 1);

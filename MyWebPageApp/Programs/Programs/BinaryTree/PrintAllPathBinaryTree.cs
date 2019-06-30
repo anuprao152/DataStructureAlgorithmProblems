@@ -7,17 +7,17 @@ namespace programs
 {
     public class PrintAllPathBinaryTree
     {
-        private bnode<int>[] Path;
+        private Bnode<int>[] Path;
         //private int PathLength = 0;
 
 
-        public void PrintPathRootToLeaf(bnode<int> root)
+        public void PrintPathRootToLeaf(Bnode<int> root)
         {
-            Path = new bnode<int>[1000];
+            Path = new Bnode<int>[1000];
             PathRootToleafRec(root, 0);
         }
 
-        public void PathRootToleafRec(bnode<int> node, int length)
+        public void PathRootToleafRec(Bnode<int> node, int length)
         {
             if (node == null) return;
 

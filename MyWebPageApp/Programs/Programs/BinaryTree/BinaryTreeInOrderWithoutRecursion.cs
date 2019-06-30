@@ -7,9 +7,9 @@ namespace programs
 {
     class BinaryTreeInOrderWithoutRecursion
     {
-        public void InorderTraversalUsingStack( bnode<int> node)
+        public void InorderTraversalUsingStack( Bnode<int> node)
         {
-            Stack<bnode<int>> s = new Stack<bnode<int>>();
+            Stack<Bnode<int>> s = new Stack<Bnode<int>>();
             
             while (node !=null)
             {
@@ -20,7 +20,7 @@ namespace programs
                     node = node.left;
                 }
 
-                bnode<int> p = s.Pop();// visit left child First
+                Bnode<int> p = s.Pop();// visit left child First
 
                 while(p.right == null && s.Count!=0)
                 {

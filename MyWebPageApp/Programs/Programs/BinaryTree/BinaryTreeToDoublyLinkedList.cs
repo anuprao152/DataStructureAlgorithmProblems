@@ -13,16 +13,16 @@ namespace programs
         /// </summary>
         /// <param name="root"></param>
 
-        private static bnode<int> prev=null;
+        private static Bnode<int> prev=null;
 
-        public void ConvertB2DDL(bnode<int> root)
+        public void ConvertB2DDL(Bnode<int> root)
         {
             fixprevPointer(root);
             fixNextPointer(root);
 
         }
 
-        public void fixprevPointer(bnode<int> root)
+        public void fixprevPointer(Bnode<int> root)
         {
             //Fix the left pointer first
             //root is current node
@@ -36,7 +36,7 @@ namespace programs
         }
 
         //
-        public void fixNextPointer(bnode<int> root)
+        public void fixNextPointer(Bnode<int> root)
         {
             //reach the right most node, which is last node in ddl
             while (root != null && root.right != null)

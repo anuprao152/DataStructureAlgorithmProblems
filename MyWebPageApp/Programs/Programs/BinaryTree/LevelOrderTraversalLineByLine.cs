@@ -8,9 +8,9 @@ namespace Programs.BinaryTree
 {
     public class LevelOrderTraversalLineByLine
     {
-        public void LineByLineLevelOrderTraversal(bnode<int> head)
+        public void LineByLineLevelOrderTraversal(Bnode<int> head)
         {
-            var q = new System.Collections.Generic.Queue<bnode<int>>();
+            var q = new System.Collections.Generic.Queue<Bnode<int>>();
 
             q.Enqueue(head);
             int curlevel = 1;
