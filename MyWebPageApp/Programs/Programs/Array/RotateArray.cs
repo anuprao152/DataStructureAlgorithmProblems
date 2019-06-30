@@ -68,5 +68,26 @@ namespace programs
                 Console.Write("{0}", arr[i]);
             }
         }
+
+
+        //reversal algorithm
+        public void RotateReversalAlgo(int[] arr, int k)
+        {
+            ReverseArray(arr,0, k - 1);
+            ReverseArray(arr, k, arr.Length -1);
+            ReverseArray(arr, 0, arr.Length - 1);
+        }
+
+        private void ReverseArray(int[] arr, int start, int end)
+        {
+            while(start <= end)
+            {
+                var temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                start++;
+                end--;
+            }
+        }
     }
 }

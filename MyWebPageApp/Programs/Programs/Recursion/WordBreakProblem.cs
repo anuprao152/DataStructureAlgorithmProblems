@@ -51,5 +51,28 @@ namespace programs
             }
 
         }
+
+        public int MinSpaceWordBreak(string s, int index, Dictionary<string,string> dict)
+        {
+            if (index >= s.Length)
+                return 0;
+
+            var min = int.MaxValue;
+            for(int i=index;i<s.Length;i++)
+            {
+                var prefix = s.Substring(index, i - index +1);
+
+                if(dict.ContainsKey(prefix))
+                {
+                     var sol = 1 + MinSpaceWordBreak(s, i + 1, dict);
+
+                     if (sol != int.MinValue && sol < min)
+                     {
+                         min = sol;
+                     }
+                }
+            }
+            return min;
+        }
     }
 }
