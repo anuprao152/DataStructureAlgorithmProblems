@@ -121,6 +121,7 @@
     <Compile Include="Facebook\PalindromPair.cs" />
     <Compile Include="Facebook\PerfectSquare.cs" />
     <Compile Include="Facebook\ProductOfArrayExceptSelf.cs" />
+    <Compile Include="Facebook\ShortestSuperString.cs" />
     <Compile Include="Facebook\SkylineProblem.cs" />
     <Compile Include="Facebook\SmallestStringContainingAllChars.cs" />
     <Compile Include="Facebook\StrobogrammaticNumber.cs" />
