@@ -88,7 +88,9 @@
     <Compile Include="BinaryTree\ConnectSiblingBinaryTree.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalLineByLine.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalReverse.cs" />
+    <Compile Include="BinaryTree\MaxWidthBinaryTree.cs" />
     <Compile Include="BinaryTree\NextRightNode.cs" />
+    <Compile Include="BinaryTree\NodeKDistance.cs" />
     <Compile Include="BinaryTree\ZigZagOrderTraversal.cs" />
     <Compile Include="BinaryTree\SortedArrayToBSTProg.cs" />
     <Compile Include="BitManipulation\CountSetBits.cs" />
@@ -179,6 +181,7 @@
     <Compile Include="Recursion\JumpGame.cs" />
     <Compile Include="Recursion\MinimumCostPath.cs" />
     <Compile Include="Recursion\PalindromPartition.cs" />
+    <Compile Include="Recursion\Power.cs" />
     <Compile Include="Recursion\RemoveInvalidParantheses.cs" />
     <Compile Include="Recursion\RestoreIPAddress.cs" />
     <Compile Include="Recursion\Sudoku.cs" />

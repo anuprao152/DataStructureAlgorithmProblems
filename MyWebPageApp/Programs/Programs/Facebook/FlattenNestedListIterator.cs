@@ -11,7 +11,7 @@ namespace Programs.Facebook
 
         Stack<object> stack = new Stack<object>();
 
-        public void FlattenNestedListIteratorFun(List<object> nestedList)
+        public void FlattenNestedListIteratorFun(List<List<int>> nestedList)
         {
             for(int i=nestedList.Count - 1; i >= 0; i--)
             {
