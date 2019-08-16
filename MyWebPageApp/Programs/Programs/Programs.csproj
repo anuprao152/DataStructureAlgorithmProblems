@@ -85,6 +85,7 @@
     <Compile Include="Anagram.cs" />
     <Compile Include="AnagramPair.cs" />
     <Compile Include="Array\TwoSumCloseToTarget.cs" />
+    <Compile Include="BinaryTree\BinaryTreeFromParentArray.cs" />
     <Compile Include="BinaryTree\ConnectSiblingBinaryTree.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalLineByLine.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversalReverse.cs" />
