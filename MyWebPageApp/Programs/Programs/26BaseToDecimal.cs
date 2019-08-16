@@ -41,18 +41,5 @@ namespace programs
             while (letters.Count != 0)
                 Console.Write(letters.Pop());
         }
-
-        //public int indexOf(char c)
-        //{
-        //    int i = 0;
-        //    for (; i < alpha.Length; i++)
-        //    {
-        //        if (alpha[i] == c)
-        //        {
-        //            break;
-        //        }
-        //    }
-        //    return i;
-        //}
     }
 }
