@@ -14,7 +14,8 @@ namespace programs
 
         // Condition: You can't use dictionary and sort method
 
-        //C# doesn't allow inplace removal as string is immutable
+        // https://www.geeksforgeeks.org/remove-duplicates-from-a-given-string/
+        // https://www.geeksforgeeks.org/remove-duplicates-from-a-string-in-o1-extra-space/
 
         public void RemoveDup(string str)
         {
@@ -22,60 +23,21 @@ namespace programs
 
             Boolean[] ascii = new Boolean[256];
 
-            Boolean[] output = new Boolean[256]; // for sorted output by ascii
-
-            //StringBuilder sb = new StringBuilder();
-
             for (int i = 0; i < str.Length; i++)
             {
-                int Value = (int)str[i]; // conver character to ascii value
-                if (!ascii[Value])
+                char ch = str[i];
+                if (!ascii[ch])
                 {
-                    ascii[Value] = true;
-                }
-                else
-                {
-                    //sb.Append(str[i]);
-
-                    if (!output[Value])
-                        output[Value] = true;
+                    ascii[ch] = true;
                 }
             }
 
-            StringBuilder opStr = new StringBuilder();
-            for (int i = 0; i < output.Length; i++)
+            var res = new StringBuilder();
+            for (int i = 0; i < ascii.Length; i++)
             {
-                if(output[i])
-                    opStr.Append((char)i);
+                if (ascii[i])
+                    res.Append((char)i);
             }
-
-            //string unsorted = sb.ToString(); // unsorted output which presever order of duplicates in string
-
-            ////For Sorted output, 
-
-            ////1. Clare boolan array with false values
-            //for (int i = 0; i < ascii.Length; i++)
-            //    ascii[i] = false;
-
-            ////Read the duplicate character string and set to true for ascill values
-            //for (int i = 0; i < unsorted.Length ; i++)
-            //{
-            //    int val = (int)unsorted[i]; //char to ascii value
-            //    ascii[val] = true; 
-            //}
-
-            //char[] sorted = new char[unsorted.Length];
-
-            //int index = 0;
-            ////print sorted output
-            //for (int i = 0; i < ascii.Length; i++)
-            //{
-            //    if (ascii[i])
-            //    {
-            //        sorted[index] = (char)i;
-            //        index++;
-            //    }    
-            //}  
         }
     }
 }

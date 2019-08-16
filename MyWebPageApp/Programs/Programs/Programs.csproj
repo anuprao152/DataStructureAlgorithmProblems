@@ -170,6 +170,7 @@
     <Compile Include="MajorityElement.cs" />
     <Compile Include="MedianInStream.cs" />
     <Compile Include="MergeKSortedArrays.cs" />
+    <Compile Include="MultiplyLargeNumberString.cs" />
     <Compile Include="MutliThreading\ProducerConsumerProb.cs" />
     <Compile Include="PrimeFactorsOfNum.cs" />
     <Compile Include="Recursion\BoggleGame.cs" />
@@ -186,6 +187,7 @@
     <Compile Include="Recursion\Power.cs" />
     <Compile Include="Recursion\RemoveInvalidParantheses.cs" />
     <Compile Include="Recursion\RestoreIPAddress.cs" />
+    <Compile Include="Recursion\StringInterleaving.cs" />
     <Compile Include="Recursion\StringKPalindromOrNot.cs" />
     <Compile Include="Recursion\Sudoku.cs" />
     <Compile Include="SortElementByFrequency.cs" />
